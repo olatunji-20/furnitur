@@ -50,7 +50,6 @@ export const useProductsStore = defineStore('productsStore', {
             console.log(this.cartItems)
             console.log(payload.number)
             console.log(payload.product)
-            console.log(payload.product.review)
         }
     }
 })
