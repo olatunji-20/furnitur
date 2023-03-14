@@ -37,6 +37,7 @@ export const useProductsStore = defineStore('productsStore', {
                     productName: payload.product.productName,
                     price: payload.product.productPrice,
                     image: payload.product.productImage,
+                    rating: payload.product.review,
                     quantity: payload.number
                 })
             }
@@ -49,6 +50,7 @@ export const useProductsStore = defineStore('productsStore', {
             console.log(this.cartItems)
             console.log(payload.number)
             console.log(payload.product)
+            console.log(payload.product.review)
         }
     }
 })

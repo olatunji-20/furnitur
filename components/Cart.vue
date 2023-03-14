@@ -2,68 +2,52 @@
   <div>
     <div class="border-4 border-blue-500 w-[100%] h-[auto] flex justify-between wrap">
         <div class="border-4 border-green-300 w-[60%] h-[100%]">
-            <div class="border-2 border-red-400 w-[100%] h-[120px]" v-for="c in cart" :key="c.id">
-                <p>{{ c.productName }}</p>
+            <div class="border-2 border-red-400 w-[100%] h-[200px] flex justify-between mb-4" v-for="c in cartProducts" :key="c.id">
+                <div class="border border-red-500 w-[150px] h-[100%]">
+                    <img class="w-[100%] h-[100%] object-cover" :src="c.image" :alt="c.productName" />
+                </div>
+                <div class="border border-blue-500 w-[500px] h-[100%] text-left">
+                    <p class="font-bold text-xl">{{ c.productName }}</p>
+                    <div class="border border-red-500 h-[25px] w-[150px] my-2">
+                        <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
+                    </div>
+                </div>
             </div>
-            <!-- <p> {{ cart.length }} </p> -->
         </div>
-        <div class="border-4 border-red-800 w-[40%] h-[100%]">
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <!-- NOTHING -->
-            <!-- <p class="py-4">Lorem ipsum ddbsghbholor sit amet.</p>
+        <div class="border-4 border-red-800 w-[40%] h-[100%] py-12">
+            <div class="border border-blue-500 w-[70%] h-[auto] mx-[auto] text-left">
+                <h1 class="font-bold text-2xl">ORDER SUMMARY</h1>
+                <p class="mt-4 mb-12 text-sm">Apply your monthly voucher to get more discount!</p>
+                <p class="py-4">Price:</p>
+                <p class="py-4">Discount: </p>
+                <p class="py-4">Total Price:</p>
 
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum doloegwurgr sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolofsgr sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p>
-            <p class="py-4">Lorem ipsum dolor sit amet.</p> -->
-            <!-- NOTHING -->
+                <button class="bg-red-700 w-[100%] py-2 text-white mt-16">PROCEED TO CHECKOUT</button>
+
+            </div>
         </div>
     </div>
   </div>
 </template>
 
 <script>
-import { useProductsStore } from '../stores/ProductsStore'
-export default {
-    setup() {
-        const productsStore = useProductsStore();
+import StarRating from 'vue-dynamic-star-rating'
 
-        const cart = productsStore.cartItems
-        return { cart }
-    }
+export default {
+    props: {
+        cartProducts: Array
+    },
+    setup() {
+        return {
+            starStyle: {
+              fullStarColor: '#ed8a19',
+              emptyStarColor: '#737373',
+              starWidth: 18,
+              starHeight: 18
+          }
+        }
+    },
+    components: { StarRating }
 
 }
 </script>
