@@ -1,5 +1,7 @@
 <template>
   <div class="">
+    <Reviews />
+    <Trusted />
     <Choose />
     <h1>WELCOME TO THIS APPLICATION.</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt, iste laborum maxime ad veritatis, autem tenetur eligendi corporis voluptas accusantium a impedit quibusdam 
@@ -11,8 +13,10 @@
 
 <script>
 import Choose from '~/components/Choose'
+import Trusted from '~/components/Trusted'
+import Reviews from '~/components/Reviews'
   export default {
-    components: { Choose }
+    components: { Choose, Trusted, Reviews }
   }
 </script>
 
