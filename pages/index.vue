@@ -1,5 +1,8 @@
 <template>
   <div class="">
+    <section class="border-4 border-red-900 w-[100%] h-[600px] bg-blue-100">
+      <div class="border-2 border-green-700 w-[600px] h-[400px]"><p>FURNITURE GALLERY</p></div>
+    </section>
     <Reviews />
     <Trusted />
     <Choose />
