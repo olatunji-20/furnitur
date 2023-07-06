@@ -18,7 +18,7 @@
     <section class="border-4 border-red-600 w-[100%] h-[700px]">
       <div class="w-[80%] h-[520px] border-2 border-blue-600 mx-[auto] my-28 flex justify-between">
         <div class="w-[280px] h-[100%] border-2 border-green-700 bg-red-50 flex flex-col justify-between px-4">
-          <div class="w-[70%] h-[200px] border border-red-500"></div>
+          <div class="w-[70%] h-[200px] border border-red-500" style="position: relative; left: 73px;"></div>
           <div class="w-[100%] h-[220px] border border-green-500 pt-4">
             <h4 class="font-bold">HANGING LIGHT</h4>
             <p class="mt-2">Upgrade your space with our modern hanging light, featuring sleek-lines, energy-efficient
@@ -46,7 +46,7 @@
             <br />
             <p>View more ></p>
           </div>
-          <div class="w-[70%] h-[200px] border border-red-500 relative"></div>
+          <div class="w-[70%] h-[200px] border border-red-500 relative" style="position: relative; left: 73px;"></div>
         </div>
       </div>
     </section>
@@ -69,7 +69,12 @@ import Reviews from '~/components/Reviews'
 import Featured from '~/components/Featured'
 
   export default {
-    components: { Choose, Trusted, Reviews, Featured }
+    components: {
+      Choose,
+      Trusted,
+      Reviews,
+      Featured
+    }
   }
 </script>
 
