@@ -30,7 +30,7 @@
                 <img src="../asssets/brand5.png" class="w-[100%] h-[100%] object-cover" />
             </div>
             <div class="border border-red-500 w-[180px] h-[130px] mx-2 my-8">
-                <img src="../asssets/brand2.png" class="w-[100%] h-[100%] object-cover" />
+                <img src="../asssets/brand4.png" class="w-[100%] h-[100%] object-cover" />
             </div>
             <div class="border border-red-500 w-[180px] h-[130px] mx-2 my-8">
                 <img src="../asssets/brand6.png" class="w-[100%] h-[100%] object-cover" />
