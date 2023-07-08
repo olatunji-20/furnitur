@@ -57,8 +57,8 @@
       </div>
     </section>
     <Trusted />
-    <Choose />
     <Featured />
+    <Choose />
     <Reviews />
   </div>
 </template>

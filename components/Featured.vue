@@ -7,7 +7,7 @@
             <ul class="inline-block mx-4 font-bold border border-blue-700 cursor-pointer" :class="showC? 'active' : 'non-active'" v-on:click="onSofa">SOFA</ul>
             <ul class="inline-block mx-4 font-bold border border-blue-700 cursor-pointer" :class="showD? 'active' : 'non-active'" v-on:click="onHang">HANGING LIGHT</ul>
         </ul>
-        <div class="w-[75%] h-[700px] border-4 border-green-500 my-16 mx-[auto] overflow-hidden">
+        <div class="w-[75%] h-[900px] border-4 border-green-500 my-16 mx-[auto] overflow-hidden">
             <All v-show="showA" />
             <OnSale v-show="showB" />
             <Sofa v-show="showC" />

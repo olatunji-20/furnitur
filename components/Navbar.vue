@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="border-4 border-green-800 py-5 pl-20 pr-40 flex justify-between">
-            <div class="w-[180px] h-[50px] border-2 border-red-900">
+        <div class="border-4 border-green-800 py-8 pl-20 pr-40 flex justify-between">
+            <div class="w-[200px] h-[50px] border-2 border-red-900">
                 <img class="w-[100%] h-[100%]" src="../asssets/logo.png"/>
             </div>
             <div class="border-2 border-green-700 w-[600px] h-15 flex justify-center p-[2px]">
