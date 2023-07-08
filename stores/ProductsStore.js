@@ -2,8 +2,8 @@ import { defineStore } from 'pinia'
 
 export const useProductsStore = defineStore('productsStore', {
     state: () => ({
-        name: "SHERIFF",
-        products: []
+        products: [],
+        product: {}
     }),
     
     actions: {
@@ -12,6 +12,12 @@ export const useProductsStore = defineStore('productsStore', {
             const products = await res.json()
 
             this.products = products
+        },
+        async getProduct(_id) {
+            const res = await fetch("http://localhost:5000/products/" + _id)
+            const product = res.json()
+
+            this.product = product
         }
     }
 })
