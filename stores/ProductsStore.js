@@ -5,6 +5,7 @@ export const useProductsStore = defineStore('productsStore', {
         name: "SHERIFF",
         products: []
     }),
+    
     actions: {
         async getProducts() {
             const res = await fetch("http://localhost:5000/products")

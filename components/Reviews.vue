@@ -1,5 +1,5 @@
 <template>
-  <div class="border-4 border-blue-900 w-[100%] h-[900px] py-12 px-8">
+  <div class="border-4 border-blue-900 w-[100%] h-[auto] py-28 px-8">
     <h1 class="text-3xl font-bold text-center">REVIEWS BY CUSTOMERS</h1>
     <h4 class="font-bold text-center leading-10">What our customers think about us.</h4>
     <div class="border-2 border-red-800 w-[90%] h-[auto] mx-[auto] my-12 p-4 overflow-auto">

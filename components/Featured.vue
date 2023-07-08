@@ -1,5 +1,5 @@
 <template>
-    <div class="border-8 border-green-900 w-[100%] h-[auto] text-center p-16">
+    <div class="border-8 border-green-900 w-[100%] h-[auto] text-center p-28">
         <p class="font-bold text-3xl">FEATURED PRODUCTS</p>
         <ul class="border border-red-700 mt-6 mb-10">
             <ul class="inline-block mx-4 font-bold border border-blue-700 cursor-pointer" :class="showA? 'active' : 'non-active'" v-on:click="all">ALL</ul>
@@ -7,7 +7,7 @@
             <ul class="inline-block mx-4 font-bold border border-blue-700 cursor-pointer" :class="showC? 'active' : 'non-active'" v-on:click="onSofa">SOFA</ul>
             <ul class="inline-block mx-4 font-bold border border-blue-700 cursor-pointer" :class="showD? 'active' : 'non-active'" v-on:click="onHang">HANGING LIGHT</ul>
         </ul>
-        <div class="w-[75%] h-[900px] border-4 border-green-500 my-16 mx-[auto] overflow-hidden">
+        <div class="w-[85%] h-[auto] border-4 border-green-500 my-16 mx-[auto] overflow-hidden">
             <All v-show="showA" />
             <OnSale v-show="showB" />
             <Sofa v-show="showC" />

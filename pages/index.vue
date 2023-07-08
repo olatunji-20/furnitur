@@ -15,8 +15,8 @@
 
     <!-- HANGING SECTION -->
 
-    <section class="border-4 border-red-600 w-[100%] h-[700px]">
-      <div class="w-[80%] h-[520px] border-2 border-blue-600 mx-[auto] my-28 flex justify-between">
+    <section class="border-4 border-red-600 w-[100%] h-[auto] py-28">
+      <div class="w-[80%] h-[520px] border-2 border-blue-600 mx-[auto] flex justify-between">
         <div class="w-[280px] h-[100%] border-2 border-green-700 bg-red-50 flex flex-col justify-between px-4">
           <div class="w-[70%] h-[200px] border border-red-500" style="position: relative; left: 73px;">
             <img src="../asssets/d-hang.png"/>
@@ -59,6 +59,32 @@
     <Trusted />
     <Featured />
     <Choose />
+
+    <!-- SPECIAL SECTION -->
+
+    <section class="border-8 border-red-800 w-[100%] h-[auto] pt-28 pb-44">
+      <div class="border-2 border-green-800 w-[80%] h-[300px] mx-[auto] flex justify-between">
+        <div class="w-[380px] h-[100%] border border-red-400 p-12">
+          <h2 class="font-bold text-3xl">MODERN BRONZE HANGING LIGHT</h2>
+          <div class="w-[150px] h-[25px] border border-blue-600 my-4"></div>
+          <p class="mt-8 line-through">$3252.41</p>
+          <h5 class="font-bold text-2xl inline">$2352.41</h5>
+          <p class="bg-red-600 inline ml-6 py-1 px-2 rounded-sm text-white">-30%</p>
+        </div>
+        <div class="w-[250px] h-[135%] border border-red-400">
+          <img src="../asssets/hang5.png" class="w-[100%] h-[100%]" alt="hanging light"/>
+        </div>
+        <div class="w-[380px] h-[100%] border border-red-400 py-12 px-2 text-right">
+          <p>Stunning lighting feature that combines contemporary style with timeless elegance. Featuring a sleek and
+            minimalist design, this hanging light is crafted from high-quality bronze and finished with a smooth and lustrous surface.
+          </p>
+          <div class="bg-gray-900 py-4 w-[230px] text-center text-white mt-8 float-right">BUY NOW</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END SPECIAL SECTION -->
+
     <Reviews />
   </div>
 </template>
