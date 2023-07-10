@@ -15,7 +15,7 @@ export const useProductsStore = defineStore('productsStore', {
         },
         async getProduct(id) {
             const res = await fetch("http://localhost:5000/products/" + id)
-            const product = res.json()
+            const product = await res.json()
 
             this.product = product
         }

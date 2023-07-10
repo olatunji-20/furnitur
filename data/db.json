@@ -1,42 +1,42 @@
 {
     "products": [
         {
-            "_id": 1,
+            "id": 1,
             "productName": "URBAN LUX HIGH CHAIR",
             "productPrice": 2668.15,
             "productImage": "../asssets/chair.png",
             "review": 5
         },
         {
-            "_id": 2,
+            "id": 2,
             "productName": "MODERN BLACK HANGING LIGHT",
             "productPrice": 1595.6,
             "productImage": "../asssets/hanging.png",
             "review": 4
         },
         {
-            "_id": 3,
+            "id": 3,
             "productName": "METRO FUSION TABLE",
             "productPrice": 2238.30,
             "productImage": "../asssets/table.png",
             "review": 5
         },
         {
-            "_id": 4,
+            "id": 4,
             "productName": "LUMIN DESK LAMP",
             "productPrice": 1477.80,
             "productImage": "../asssets/lumin.png",
             "review": 5
         },
         {
-            "_id": 5,
+            "id": 5,
             "productName": "TIMELESS EDGE HANGING CLOCK",
             "productPrice": 1071.6,
             "productImage": "../asssets/timeless.png",
             "review": 4
         },
         {
-            "_id": 6,
+            "id": 6,
             "productName": "ZENITH PENDANT LIGHT",
             "productPrice": 2069.59,
             "productImage": "../asssets/light.png",

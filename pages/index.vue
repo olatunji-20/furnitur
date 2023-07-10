@@ -66,7 +66,7 @@
       <div class="border-2 border-green-800 w-[80%] h-[300px] mx-[auto] flex justify-between">
         <div class="w-[380px] h-[100%] border border-red-400 p-12">
           <h2 class="font-bold text-3xl">MODERN BRONZE HANGING LIGHT</h2>
-          <div class="w-[150px] h-[25px] border border-blue-600 my-4"></div>
+          <div class="w-[150px] h-[25px] border border-blue-600 my-4"><p><star-rating :rating="rating" :star-style="starStyle"></star-rating></p></div>
           <p class="mt-8 line-through">$3252.41</p>
           <h5 class="font-bold text-2xl inline">$2352.41</h5>
           <p class="bg-red-600 inline ml-6 py-1 px-2 rounded-sm text-white">-30%</p>
@@ -78,7 +78,7 @@
           <p>Stunning lighting feature that combines contemporary style with timeless elegance. Featuring a sleek and
             minimalist design, this hanging light is crafted from high-quality bronze and finished with a smooth and lustrous surface.
           </p>
-          <div class="bg-gray-900 py-4 w-[230px] text-center text-white mt-8 float-right">BUY NOW</div>
+          <div class="bg-gray-900 py-4 w-[210px] text-center text-white mt-8 float-right">BUY NOW</div>
         </div>
       </div>
     </section>
@@ -94,13 +94,26 @@ import Choose from '~/components/Choose'
 import Trusted from '~/components/Trusted'
 import Reviews from '~/components/Reviews'
 import Featured from '~/components/Featured'
+import StarRating from 'vue-dynamic-star-rating'
 
   export default {
+    setup() {
+      return {
+        rating: 5,
+        starStyle: {
+              fullStarColor: '#ed8a19',
+              emptyStarColor: '#737373',
+              starWidth: 20,
+              starHeight: 20
+          }
+      }
+    },
     components: {
       Choose,
       Trusted,
       Reviews,
-      Featured
+      Featured,
+      StarRating
     }
   }
 </script>
