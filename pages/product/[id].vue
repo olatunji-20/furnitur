@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="border-4 border-red-800 p-48">
-      <h1 class="text-3xl font-bold">Lorem, ipsum. {{ id }}</h1>
-      <h1 class="text-3xl font-bold">jijijrf {{ productsStore.product.productName }}</h1>
+    <div class="border-4 border-red-800">
       <ProductCard :product="productsStore.product" />
     </div>
     <Reviews />
