@@ -4,7 +4,7 @@
     <!-- LANDING SECTION -->
 
     <section style="background-image: url(../asssets/hero.png);" class="border-4 border-red-900 w-[100%] h-[500px] bg-cover">
-      <div class="border-2 border-green-700 w-[650px] h-[100%] float-right pt-20 px-12 bg-blue-50">
+      <div class="border-2 border-green-700 w-[650px] h-[100%] float-right pt-20 px-12">
         <h5 class="leading-10 font-bold">WELCOME TO OUR</h5>
         <h1 class="text-6xl font-bold leading-24">FURNITURE GALLERY</h1>
         <div class="border border-red-500 w-[200px] h-[0px] mt-6"></div>
