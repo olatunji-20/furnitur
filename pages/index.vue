@@ -124,6 +124,7 @@ import StarRating from 'vue-dynamic-star-rating'
 }
 body, html {
     margin: 0px !important;
-    padding: 0px !important;    
+    padding: 0px !important;
+    font-size: 16px;
 }
 </style>

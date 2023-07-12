@@ -4,7 +4,9 @@
       <ProductCard :product="productsStore.product" />
     </div>
     <Reviews />
+    <Best />
     <Trusted />
+    <Frequent />
   </div>
 </template>
 
