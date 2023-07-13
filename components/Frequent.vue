@@ -216,13 +216,13 @@ export default {
   }
 }
 .details {
-  border: 2px solid aquamarine;
+  border: 1px solid aquamarine;
   border-radius: 5px;
   width: 100%;
   height: 6.25rem;
   display: block;
   overflow: hidden;
-  padding: 0.1875rem 0.625rem;
+  padding: 0.1875rem 0.8rem;
   animation-name: detail;
   animation-duration: 0.3s;
 }
@@ -234,6 +234,6 @@ export default {
   height: 0rem;
 }
 .detail-leave-active {
-  transition: height 0.3s linear;
+  transition: height 0.2s linear;
 }
 </style>
