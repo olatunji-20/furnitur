@@ -11,7 +11,7 @@
             </div>
             <div class="border-2 border-red-500 w-[20%] h-[250px]">
                 <h3 class="leading-10 font-bold">COMPANY</h3>
-                <ul class="leading-8">About Japan with love</ul>
+                <ul class="leading-8 relative left-8 hover:left-4">About Japan with love</ul>
                 <ul class="leading-8">Contact Us</ul>
                 <ul class="leading-8">Specical Deals & Offers</ul>
                 <ul class="leading-8">Terms of Service</ul>

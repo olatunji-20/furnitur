@@ -10,7 +10,7 @@
         <h1 class="font-bold text-2xl">{{ product.productName }}</h1>
         <h1 class="font-bold text-2xl">${{ product.productPrice }}</h1>
         <div class="border border-green-500 w-[150px] h-[20px]">
-            <star-rating :rating="product.rating" :starStyle="starStyle"></star-rating>
+            <star-rating :rating="product.review" :starStyle="starStyle"></star-rating>
         </div>
         <h1 class="font-bold text-2xl">{{ product.review }}</h1>
     </div>
