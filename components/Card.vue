@@ -8,8 +8,8 @@
         </div>
         <div class="w-[100%] h-[25%] border border-blue-700 pt-6">
           <p>{{ p.productName }}</p>
-          <div class="border border-red-500 w-[150px] h-[25px] mx-[auto]">
-            <p><star-rating :rating="p.review" :star-style="starStyle"></star-rating></p>
+          <div class="border border-red-500 w-[120px] h-[25px] mx-[auto] my-[2px]">
+            <star-rating :rating="p.review" :starStyle="starStyle"></star-rating>
           </div>
           <p class="font-bold">${{ p.productPrice }}</p>
         </div>
@@ -28,8 +28,8 @@ export default {
           starStyle: {
               fullStarColor: '#ed8a19',
               emptyStarColor: '#737373',
-              starWidth: 20,
-              starHeight: 20
+              starWidth: 15,
+              starHeight: 15
           }
 
       }
