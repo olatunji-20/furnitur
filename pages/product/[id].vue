@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="border-4 border-red-800">
-      <ProductCard :product="productsStore.product" />
+      <!-- <p>{{ productsStore.product.productName }}</p> -->
+      <ProductCard :product="productsStore.product"/>
     </div>
     <Reviews />
     <Best />
@@ -15,13 +16,23 @@ import { useProductsStore } from '../../stores/ProductsStore'
 
 export default {
     setup() {
-      const id = useRoute().params.id
+      // const id = useRoute().params.id
       const productsStore = useProductsStore()
 
-      productsStore.getProduct(id)
+      // productsStore.getProduct(id)
 
 
-        return { id, productsStore }
+        return { productsStore }
+    },
+    async mounted() {
+      
+      const id = useRoute().params.id
+
+      const productsStore = useProductsStore()
+
+      await productsStore.getProduct(id)
+      console.log("www" + " " + id)
+      console.log("wwwQQQ" + " " + JSON.stringify(productsStore.product))
     }
 
 

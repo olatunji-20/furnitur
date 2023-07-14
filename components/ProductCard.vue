@@ -8,8 +8,9 @@
     </div>
     <div class="w-[50%] h-[600px] border-2 border-green-300 py-28 px-12">
         <h1 class="font-bold text-2xl mb-6">{{ product.productName }}</h1>
-        <div class="border border-green-500 w-[150px] h-[25px] inline-block">
-            <star-rating :rating="product.review" :starStyle="starStyle"></star-rating>
+        <div class="border border-green-500 w-[130px] h-[25px] inline-block">
+            <star-rating :starStyle="starStyle" :rating="product.review"></star-rating>
+            <!-- <star-rating :starStyle="starStyle" :rating="rating" ></star-rating> -->
         </div>
         <div class="bg-red-600 text-center w-[90px] py-[4px] inline-block ml-8"><p class="text-white">ON SALE</p></div>
         <p class="my-4">261 products sold .  3.1k products watched</p>
@@ -24,6 +25,7 @@
 
 <script>
 import StarRating from 'vue-dynamic-star-rating'
+
 export default {
     setup() {
         return {

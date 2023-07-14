@@ -22,7 +22,7 @@
 <script>
 import StarRating from 'vue-dynamic-star-rating'
 export default {
-    data() {
+    setup() {
       return {
         // rating: 2,
           starStyle: {
