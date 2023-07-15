@@ -1,7 +1,7 @@
 <template>
   <div class="border-4 border-blue-700 w-[100%] h-[auto] flex flex-wrap justify-around py-8">
     <div class="w-[50%] h-[600px] border-4 border-red-700 text-center">
-        <h1 class="text-md font-bold text-red-500">{{ product.productName }}</h1>
+        <h1 class="text-md font-bold text-blue-500">{{ product.productName }}</h1>
         <div class="w-[400px] h-[450px] border-2 border-blue-600 mx-[auto] my-12">
             <img class="w-[100%] h-[100%] object-cover" :src="product.productImage" :alt="product.productName" />
         </div>
@@ -14,12 +14,14 @@
         <div class="bg-red-600 text-center w-[90px] py-[4px] inline-block ml-8"><p class="text-white">ON SALE</p></div>
         <p class="my-4">261 products sold .  3.1k products watched</p>
         <div class="border-2 border-blue-400 my-12 w-[200px] h-[50px] flex justify-around">
-            <span class="text-2xl font-bold my-1 mx-4" v-on:click="decrement">-</span>
-            <input class="inputer w-[50px] text-center" type="number" :placeholder="number" v-model="number" />
-            <span class="text-2xl font-bold my-1 mx-4" v-on:click="increment">+</span>
+            <span class="text-2xl font-bold my-1 mx-4 cursor-pointer" v-on:click="decrement">-</span>
+            <input class="inputer w-[50px] font-bold text-xl text-center" type="number" :placeholder="number" v-model="number" />
+            <span class="text-2xl font-bold my-1 mx-4 cursor-pointer" @click="loud">+</span>
         </div>
         <h1 class="font-bold text-3xl text-red-600">${{ product.productPrice }}</h1>
-        <div class="border border-green-600 w-[70%] h-[50px] my-16 mx-[auto]"></div>
+        <div class="border border-red-600 w-[70%] h-[50px] my-16 mx-[auto]">
+            <AddCart />
+        </div>
     </div>
   </div>
 </template>
@@ -44,6 +46,9 @@ export default {
     },
     components: { StarRating },
     methods: {
+        loud() {
+            alert("fbrbhfbrhb")
+        },
         increment() {
             this.number++
         },
