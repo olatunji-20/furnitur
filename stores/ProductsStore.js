@@ -3,9 +3,10 @@ import { defineStore } from 'pinia'
 export const useProductsStore = defineStore('productsStore', {
     state: () => ({
         products: [],
-        product: {}
+        product: {},
+        cart: []
     }),
-    
+
     actions: {
         async getProducts() {
             const res = await fetch("http://localhost:5000/products")
@@ -18,6 +19,11 @@ export const useProductsStore = defineStore('productsStore', {
             const product = await res.json()
 
             this.product = product
+        },
+        addToCart(number, product) {
+            console.log("ADDED TO CART" + number + product)
+            console.log(number)
+            console.log(product)
         }
     }
 })

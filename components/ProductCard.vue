@@ -18,7 +18,7 @@
             <input v-model="number" class="inputer w-[50px] font-bold text-xl text-center" type="number" :placeholder="number"/>
             <span class="text-2xl font-bold my-1 mx-4 cursor-pointer" @click="increment">+</span>
         </div>
-        <h1 class="font-bold text-3xl text-red-600">${{ product.productPrice }}</h1>
+        <h1 class="font-bold text-4xl text-red-600">${{ product.productPrice }}</h1>
         <div class="border border-red-600 w-[70%] h-[50px] my-16 mx-[auto]">
             <AddCart :number="number" :product="product"/>
         </div>
