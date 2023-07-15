@@ -25,7 +25,7 @@
     opacity: 1;
 }
 .ddd-enter-active {
-    transition: all 5s ease;
+    transition: all 2s ease;
 }
 .ddd-leave-from {
     left: 0%;

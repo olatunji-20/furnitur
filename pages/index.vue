@@ -66,7 +66,7 @@
       <div class="border-2 border-green-800 w-[80%] h-[300px] mx-[auto] flex justify-between">
         <div class="w-[380px] h-[100%] border border-red-400 p-12">
           <h2 class="font-bold text-3xl">MODERN BRONZE HANGING LIGHT</h2>
-          <div class="w-[150px] h-[25px] border border-blue-600 my-4"><p><star-rating :rating="rating" :star-style="starStyle"></star-rating></p></div>
+          <div class="w-[150px] h-[25px] border border-blue-600 my-4"><star-rating :rating="rating" :star-style="starStyle"></star-rating></div>
           <p class="mt-8 line-through">$3252.41</p>
           <h5 class="font-bold text-2xl inline">$2352.41</h5>
           <p class="bg-red-600 inline ml-6 py-1 px-2 rounded-sm text-white">-30%</p>

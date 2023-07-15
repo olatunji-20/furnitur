@@ -1,7 +1,7 @@
 <template>
   <div class="border-4 border-blue-700 w-[100%] h-[auto] flex flex-wrap justify-around py-8">
     <div class="w-[50%] h-[600px] border-4 border-red-700 text-center">
-        <h1 class="text-md font-bold">{{ product.productName }}</h1>
+        <h1 class="text-md font-bold text-red-500">{{ product.productName }}</h1>
         <div class="w-[400px] h-[450px] border-2 border-blue-600 mx-[auto] my-12">
             <img class="w-[100%] h-[100%] object-cover" :src="product.productImage" :alt="product.productName" />
         </div>
@@ -9,13 +9,14 @@
     <div class="w-[50%] h-[600px] border-2 border-green-300 py-28 px-12">
         <h1 class="font-bold text-2xl mb-6">{{ product.productName }}</h1>
         <div class="border border-green-500 w-[130px] h-[25px] inline-block">
-            <star-rating :starStyle="starStyle" :rating="product.review"></star-rating>
-            <!-- <star-rating :starStyle="starStyle" :rating="rating" ></star-rating> -->
+            <star-rating :rating="product.review" :key="product.id" :star-style="starStyle"></star-rating>
         </div>
         <div class="bg-red-600 text-center w-[90px] py-[4px] inline-block ml-8"><p class="text-white">ON SALE</p></div>
         <p class="my-4">261 products sold .  3.1k products watched</p>
         <div class="border-2 border-blue-400 my-12 w-[200px] h-[50px] flex justify-around">
-            <span class="text-2xl font-bold mx-4">-</span><p class="mt-2">Number: <span> 1 </span></p><span class="text-2xl font-bold mx-4">+</span>
+            <span class="text-2xl font-bold my-1 mx-4" v-on:click="decrement">-</span>
+            <input class="inputer w-[50px] text-center" type="number" :placeholder="number" v-model="number" />
+            <span class="text-2xl font-bold my-1 mx-4" v-on:click="increment">+</span>
         </div>
         <h1 class="font-bold text-3xl text-red-600">${{ product.productPrice }}</h1>
         <div class="border border-green-600 w-[70%] h-[50px] my-16 mx-[auto]"></div>
@@ -29,7 +30,7 @@ import StarRating from 'vue-dynamic-star-rating'
 export default {
     setup() {
         return {
-            // rating: 3,
+            number: 2,
             starStyle: {
               fullStarColor: '#ed8a19',
               emptyStarColor: '#737373',
@@ -41,11 +42,23 @@ export default {
     props: {
         product: Object
     },
-    components: { StarRating }
+    components: { StarRating },
+    methods: {
+        increment() {
+            this.number++
+        },
+        decrement() {
+            this.number--;
+        }
+    }
 
 }
 </script>
 
-<style>
+<style scoped>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 </style>
