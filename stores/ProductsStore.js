@@ -4,7 +4,7 @@ export const useProductsStore = defineStore('productsStore', {
     state: () => ({
         products: [],
         product: {},
-        cart: []
+        cartItems: []
     }),
 
     actions: {
@@ -21,6 +21,32 @@ export const useProductsStore = defineStore('productsStore', {
             this.product = product
         },
         addToCart(payload) {
+            const existingItem = this.cartItems.find(item => {
+                return item.id === payload.product.id
+            })
+
+            if(existingItem) {
+                let existingItemIndex = this.cartItems.findIndex(
+                    item => item.id === existingItem.id
+                )
+                this.cartItems[existingItemIndex] = existingItem
+                existingItem.quantity = existingItem.quantity + payload.number
+            }else {
+                this.cartItems.push({
+                    id: payload.product.id,
+                    productName: payload.product.productName,
+                    price: payload.product.productPrice,
+                    image: payload.product.productImage,
+                    quantity: payload.number
+                })
+            }
+
+
+
+            console.log("EXISTTTT" + existingItem)
+            console.log(existingItem)
+            console.log("AAAAA" + this.cartItems)
+            console.log(this.cartItems)
             console.log(payload.number)
             console.log(payload.product)
         }
