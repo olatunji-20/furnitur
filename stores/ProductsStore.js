@@ -20,10 +20,9 @@ export const useProductsStore = defineStore('productsStore', {
 
             this.product = product
         },
-        addToCart(number, product) {
-            console.log("ADDED TO CART" + number + product)
-            console.log(number)
-            console.log(product)
+        addToCart(payload) {
+            console.log(payload.number)
+            console.log(payload.product)
         }
     }
 })
