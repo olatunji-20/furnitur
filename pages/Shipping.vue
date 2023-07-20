@@ -1,8 +1,9 @@
 <template>
-    <div class="text-center py-36">
-        <LineAnimate stage="stage3" />
-        <NuxtLink to="/Info">
-            <h1 class="font-bold text-4xl">SHIPPING PAGE</h1>
+    <div class="text-center py-20">
+        <h1 class="font-bold text-4xl">SHIPPING & PAYMENT</h1>
+        <LineAnimate stage="stage2" />
+        <NuxtLink to="/Register">
+            <h1 class="font-bold text-4xl py-40">TO REGISTER</h1>
         </NuxtLink>
       <h1 class="font-bold text-4xl">SHIPPING PAGE</h1>
       <h1 class="font-bold text-4xl">SHIPPING PAGE</h1>

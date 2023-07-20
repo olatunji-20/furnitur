@@ -15,7 +15,7 @@
         <p class="my-4">261 products sold .  3.1k products watched</p>
 
         <!-- NUMBER SECTION-->
-        <div class="border-2 border-blue-400 my-12 w-[200px] h-[50px] flex justify-around">
+        <div class="border-2 border-blue-400 my-12 w-[200px] h-[50px] flex justify-around rounded-md">
             <span class="text-2xl font-bold my-1 mx-4 cursor-pointer" @click="decrement">-</span>
             <input v-model="number" class="inputer w-[50px] font-bold text-xl text-center" type="number" :placeholder="number"/>
             <span class="text-2xl font-bold my-1 mx-4 cursor-pointer" @click="increment">+</span>

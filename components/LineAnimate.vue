@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="border-4 border-blue-500 w-[100%] h-[auto] p-8">
+    <div class="border-4 border-blue-500 w-[100%] h-[auto]">
         <div class="w-[70%] h-[10px] mx-[auto] flex justify-between relative top-[6px]">
             <div class="border-2 border-blue-500 w-[12px] h-[12px] rounded-full bg-blue-600"></div>
             <div class="border-2 border-blue-500 w-[12px] h-[12px] rounded-full bg-blue-600"></div>
@@ -13,10 +13,10 @@
         </div>
 
         <div class="border-2 border-red-500 w-[85%] h-[auto] mx-[auto] flex justify-between">
-            <div class="border-2 border-blue-500 w-[200px] h-[180px] font-bold text-3xl"><h1>1</h1></div>
-            <div class="border-2 border-blue-500 w-[200px] h-[180px] font-bold text-3xl"><h1>2</h1></div>
-            <div class="border-2 border-blue-500 w-[200px] h-[180px] font-bold text-3xl"><h1>3</h1></div>
-            <div class="border-2 border-blue-500 w-[200px] h-[180px] font-bold text-3xl"><h1>4</h1></div>
+            <div class="border-2 border-blue-500 w-[220px] h-[150px] font-bold text-3xl"><h1>1</h1></div>
+            <div class="border-2 border-blue-500 w-[220px] h-[150px] font-bold text-3xl"><h1>2</h1></div>
+            <div class="border-2 border-blue-500 w-[220px] h-[150px] font-bold text-3xl"><h1>3</h1></div>
+            <div class="border-2 border-blue-500 w-[220px] h-[150px] font-bold text-3xl"><h1>4</h1></div>
         </div>
     </div>
   </div>
@@ -35,7 +35,7 @@ export default {
     background: red;
     width: 70%;
     height: 4px;
-    margin: 0px auto 3rem;
+    margin: 0px auto 1rem;
 }
 .stage1 {
     width: 25%;

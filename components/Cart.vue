@@ -6,17 +6,20 @@
                 <div class="border border-red-500 w-[150px] h-[100%]">
                     <img class="w-[100%] h-[100%] object-cover" :src="c.image" :alt="c.productName" />
                 </div>
-                <div class="border border-blue-500 w-[500px] h-[100%] text-left">
+                <div class="border border-blue-500 w-[500px] h-[100%] text-left pt-2">
                     <p class="font-bold text-xl">{{ c.productName }}</p>
                     <div class="border border-red-500 h-[25px] w-[150px] my-2">
                         <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
                     </div>
-                    <div class="border-2 border-blue-400 my-2 w-[150px] h-[40px] flex justify-around">
+                    <p class="font-bold">${{ c.price }}</p>
+                    <div class="border-2 border-blue-400 mr-4 w-[150px] h-[40px] flex justify-around float-right rounded-md">
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity--">-</span>
                         <input v-model="c.quantity" class="inputer w-[50px] font-bold text-xl text-center" type="number" :placeholder="number"/>
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity++">+</span>
                     </div>
-                    <p class="font-bold text-3xl">${{ c.price }}</p>
+                    <br />
+                    <br />
+                    <p class="font-bold text-2xl float-right mr-10">${{ Math.ceil(c.price * c.quantity) }}</p>
                 </div>
             </div>
         </div>
@@ -28,7 +31,7 @@
                 <p class="py-4">Discount: </p>
                 <p class="py-4">Total Price:</p>
 
-                <button class="bg-red-700 w-[100%] py-2 text-white mt-16"><NuxtLink to="/Customer">PROCEED TO CHECKOUT</NuxtLink></button>
+                <button class="bg-red-700 w-[100%] py-2 text-white mt-16"><NuxtLink to="/Shipping">PROCEED TO CHECKOUT</NuxtLink></button>
 
             </div>
         </div>
@@ -74,6 +77,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 </style>
