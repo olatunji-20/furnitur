@@ -8,6 +8,7 @@
     <h1 class="font-bold text-4xl">REGISTRATION PAGE</h1>
     <h1 class="font-bold text-4xl">REGISTRATION PAGE</h1>
   </div>
+  <Choose />
 </template>
 
 <script>

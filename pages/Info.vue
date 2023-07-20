@@ -8,6 +8,7 @@
       <h1 class="font-bold text-4xl">CUSTOMER INFORMATION PAGE</h1>
       <h1 class="font-bold text-4xl">CUSTOMER INFORMATION PAGE</h1>
       <h1 class="font-bold text-4xl">CUSTOMER INFORMATION PAGE</h1>
+      <Choose />
     </div>
   </template>
   
