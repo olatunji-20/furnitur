@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="border-4 border-blue-500 w-[100%] h-[auto]">
+    <div class="border-4 border-blue-500 w-[100%] h-[auto] pt-8">
         <div class="w-[70%] h-[10px] mx-[auto] flex justify-between relative top-[6px]">
             <div class="border-2 border-blue-500 w-[12px] h-[12px] rounded-full bg-blue-600"></div>
             <div class="border-2 border-blue-500 w-[12px] h-[12px] rounded-full bg-blue-600"></div>
