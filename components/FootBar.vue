@@ -1,5 +1,5 @@
 <template>
-    <div class="border-2 border-blue-800 w-[100%] h-[auto] px-6 py-4 bg-blue-200">
+    <div class="border-2 border-blue-800 w-[100%] h-[auto] py-4 bg-blue-200">
         <div class="w-[85%] h-[auto] border-t-4 border-b-4 border-yellow-800 mx-[auto] flex justify-between py-12">
             <div class="border-2 border-red-500 w-[20%] h-[250px]">
                 <h3 class="leading-10 font-bold">CUSTOMER SERVICE</h3>

@@ -63,7 +63,7 @@
     <!-- SPECIAL SECTION -->
 
     <section class="border-8 border-red-800 w-[100%] h-[auto] pt-28 pb-44">
-      <div class="border-2 border-green-800 w-[80%] h-[300px] mx-[auto] flex justify-between">
+      <div class="border-2 border-green-800 w-[85%] h-[300px] mx-[auto] flex justify-between">
         <div class="w-[380px] h-[100%] border border-red-400 p-12">
           <h2 class="font-bold text-3xl">MODERN BRONZE HANGING LIGHT</h2>
           <div class="w-[150px] h-[25px] border border-blue-600 my-4"><star-rating :rating="rating" :star-style="starStyle"></star-rating></div>

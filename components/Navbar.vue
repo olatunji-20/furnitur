@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="border-4 border-green-800 py-8 pl-20 pr-40 flex justify-between">
+        <div class="border-4 border-green-800 py-8 pl-20 pr-32 flex justify-between">
             <div class="w-[200px] h-[50px] border-2 border-red-900">
                 <img class="w-[100%] h-[100%]" src="../asssets/logo.png"/>
             </div>
