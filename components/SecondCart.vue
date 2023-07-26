@@ -25,7 +25,7 @@
         <p class="leading-10 text-gray-500">Discount 10%</p>
         <p class="leading-10 text-gray-500">Total Price</p>
 
-        <button class="bg-red-900 w-[100%] py-2 text-white mt-16"><NuxtLink to="/Shipping">CONTINUE TO SHIPPING</NuxtLink></button>
+        <button class="bg-red-900 w-[100%] py-2 text-white mt-16"><NuxtLink to="/Register">CONTINUE TO SHIPPING</NuxtLink></button>
       </div>
     </div>
   </div>

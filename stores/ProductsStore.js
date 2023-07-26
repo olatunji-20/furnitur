@@ -51,5 +51,6 @@ export const useProductsStore = defineStore('productsStore', {
             console.log(payload.number)
             console.log(payload.product)
         }
-    }
+    },
+    persist: true
 })

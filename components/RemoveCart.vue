@@ -1,6 +1,6 @@
 <template>
-  <div @click="removeFromCart(id)" class="border border-red-300 cursor-pointer">
-    <p>Xq</p>
+  <div class="border border-red-300">
+    <p @click="removeFromCart(id)">de</p>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import { useProductsStore } from '../stores/ProductsStore'
 
 export default {
-    data() {
+    setup() {
         const productsStore = useProductsStore();
 
         const cart = productsStore.cartItems
@@ -21,15 +21,8 @@ export default {
   },
   methods: {
     removeFromCart(id) {
-        this.cart = this.cart.filter(x => x.id !== id);
-      
-      // try {
-      // }
-      // catch(error) {
-      //   console.log(error)
-      // }
       console.log(this.cart.length)
-      
+      this.cart = this.cart.filter(x => x.id !== id);
     }
   }
 }
