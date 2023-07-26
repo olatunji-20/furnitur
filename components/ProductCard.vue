@@ -1,12 +1,12 @@
 <template>
-  <div class="border-4 border-blue-700 w-[100%] h-[auto] flex flex-wrap justify-around py-8">
-    <div class="w-[50%] h-[600px] border-4 border-red-700 text-center">
+  <div class="border-4 border-blue-700 w-[100%] h-[auto] flex flex-wrap justify-around">
+    <div class="w-[50%] h-[550px] border-4 border-red-700 text-center">
         <h1 class="text-md font-bold text-green-600">{{ product.productName }}</h1>
         <div class="w-[400px] h-[450px] border-2 border-blue-600 mx-[auto] my-12">
             <img class="w-[100%] h-[100%] object-cover" :src="product.productImage" :alt="product.productName" />
         </div>
     </div>
-    <div class="w-[50%] h-[600px] border-2 border-green-300 py-28 px-12">
+    <div class="w-[50%] h-[550px] border-2 border-green-300 py-28 px-12">
         <h1 class="font-bold text-2xl mb-6">{{ product.productName }}</h1>
         <div class="border border-green-500 w-[130px] h-[25px] inline-block">
             <star-rating :rating="product.review" :key="product.id" :star-style="starStyle"></star-rating>
@@ -23,7 +23,7 @@
         <!-- <Number :number="number" /> -->
         <!-- NUMBER SECTION-->
         <h1 class="font-bold text-4xl text-red-600">${{ product.productPrice }}</h1>
-        <div class="border border-red-600 w-[70%] h-[50px] my-16 mx-[auto]">
+        <div class="border border-red-600 w-[70%] h-[50px] mt-8 mx-[auto]">
             <AddCart :number="number" :product="product"/>
         </div>
     </div>

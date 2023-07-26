@@ -3,11 +3,14 @@
     <div class="border-4 border-blue-500 w-[100%] h-[auto] flex justify-between wrap">
         <div class="border-4 border-green-300 w-[60%] min-h-[30px]">
             <div class="border-2 border-red-400 w-[100%] h-[200px] flex justify-between mb-4" v-for="c in cartProducts" :key="c.id">
-                <div class="border border-red-500 w-[150px] h-[100%]">
+                <div class="border border-red-500 w-[30%] h-[100%]">
                     <img class="w-[100%] h-[100%] object-cover" :src="c.image" :alt="c.productName" />
                 </div>
-                <div class="border border-blue-500 w-[500px] h-[100%] text-left pt-2">
-                    <p class="font-bold text-xl">{{ c.productName }}</p>
+                <div class="border border-blue-500 w-[64%] h-[100%] text-left pt-2">
+                    <p class="font-bold text-xl inline">{{ c.productName }}</p>
+                    <div class="border-2 border-green-300 w-[30px] h-[30px] inline float-right mr-4">
+                        <RemoveCart :id="c.id" />
+                    </div>
                     <div class="border border-red-500 h-[25px] w-[150px] my-2">
                         <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
                     </div>
