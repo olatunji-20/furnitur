@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="border-4 border-red-800 w-[40%] h-[100%] py-12">
-            <div class="border border-blue-500 w-[70%] h-[auto] mx-[auto] text-left">
+            <div class="border border-blue-500 w-[80%] h-[auto] mx-[auto] text-left">
                 <h1 class="font-bold text-2xl">ORDER SUMMARY</h1>
                 <p class="mt-4 mb-12 text-sm">Apply your monthly voucher to get more discount!</p>
                 <p class="py-4">Price:</p>

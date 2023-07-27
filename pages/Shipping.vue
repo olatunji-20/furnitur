@@ -3,7 +3,7 @@
       <h1 class="font-bold text-4xl">SHIPPING & PAYMENT</h1>
       <LineAnimate stage="stage2" />
       <div class="border-4 border-green-500 w-[100%] h-[auto] flex justify-around py-24 px-32">
-        <div class="border-2 border-red-500 w-[60%] h-[400px]">
+        <div class="w-[60%] h-[auto]">
           <h1 class="text-left font-bold text-2xl">YOUR INFORMATION</h1>
           <ShippingForm />
         </div>
@@ -15,10 +15,6 @@
           </div>
         </div>
       </div>
-      <NuxtLink to="/Register">
-          <h1 class="font-bold text-4xl py-40">TO REGISTER</h1>
-      </NuxtLink>
-      <h1 class="font-bold text-4xl">SHIPPING PAGE</h1>
       <Choose />
     </div>
   </template>
