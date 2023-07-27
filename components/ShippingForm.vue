@@ -6,7 +6,7 @@
         <input class="border-b-2 border-red-400 w-[47%] mt-4 text-sm py-2" placeholder="Your first name" type="text" />
         <input class="border-b-2 border-red-400 w-[47%] mt-4 text-sm py-2" placeholder="Your last name" type="text" />
         <input class="border-b-2 border-red-400 w-[47%] mt-4 text-sm py-2" placeholder="Your email" type="email" />
-        <input class="border-b-2 border-red-400 w-[47%] mt-4 text-sm py-2" placeholder="Phone number" type="telephone" />
+        <input class="border-b-2 border-red-400 w-[47%] mt-4 text-sm py-2" placeholder="Phone number" type="tel" />
         <input class="border-b-2 border-red-400 w-[47%] mt-4 text-sm py-2" placeholder="Country" type="text" />
         <input class="border-b-2 border-red-400 w-[21%] mt-4 text-sm py-2" placeholder="City" type="text" />
         <input class="border-b-2 border-red-400 w-[20%] mt-4 text-sm py-2" placeholder="ZIP code" type="text" />

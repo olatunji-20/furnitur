@@ -11,7 +11,15 @@
           <RegisterForm />
         </div>
       </div>
-      <div class="border-2 border-blue-400 w-[42%] h-[400px]"></div>
+      <div class="border-2 border-blue-400 w-[40%] h-[400px] relative flex justify-center bg-gray-100">
+        <div class="border-2 border-red-400 w-[150px] h-[100%] text-left pt-48">
+          <div class="text-white bg-red-600 w-[50px] py-[3px] text-center text-sm mb-4">HOT</div>
+          <h1 class="font-bold text-2xl">DISCOUNT 25% FOR NEW MEMBER</h1>
+        </div>
+        <div class="border-2 border-green-400 w-[200px] h-[100%]">
+          <img src="../asssets/hang5.png" class="w-[100%] h-[100%]" alt="hanging light"/>
+        </div>
+      </div>
     </div>
   </div>
   <Choose />

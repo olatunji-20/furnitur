@@ -34,7 +34,7 @@
                 <p class="py-4">Discount: </p>
                 <p class="py-4">Total Price:</p>
 
-                <button class="bg-red-700 w-[100%] py-2 text-white mt-16"><NuxtLink to="/Shipping">PROCEED TO CHECKOUT</NuxtLink></button>
+                <NuxtLink to="/Shipping"><button class="bg-red-700 w-[100%] py-2 text-white mt-16">PROCEED TO CHECKOUT</button></NuxtLink>
 
             </div>
         </div>
