@@ -12,7 +12,7 @@
             <div :class="stage"></div>
         </div>
 
-        <div class="border-2 border-red-500 w-[85%] h-[auto] mx-[auto] flex justify-between">
+        <div class="border-2 border-red-500 w-[80%] h-[auto] mx-[auto] flex justify-between">
             <div class="border-2 border-blue-500 w-[200px] h-[120px] font-bold text-3xl">
                 <div class="border border-blue-900 w-[40px] h-[40px] mx-[auto] my-[5px] rounded-full">
                     <img src="../asssets/call.png" alt="" class="w-[100%] h-[100%] object-cover" />

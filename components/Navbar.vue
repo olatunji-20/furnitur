@@ -19,7 +19,7 @@
                     <ul class="flex">
                         <li class="mx-4"><i>℗</i>LOVE</li>
                         <li class="mx-4"><i>®</i>CART</li>
-                        <li class="mx-4"><i>©</i></li>
+                        <li class="mx-4"><i>Q</i></li>
                     </ul>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="text-center pt-12">
-        <h1 class="font-bold text-3xl">SHOPPING CART</h1>
+        <h1 class="font-bold text-3xl">SHOPPING CART{{ total }}</h1>
         <p class="font-bold my-6">THIS IS YOUR CART BASED ON WHAT YOU WANTED TO BUY</p>
     <LineAnimate stage="stage1" />
     <div class="border-4 border-green-600 w-[100%] h-[auto] text-center py-28">
@@ -29,16 +29,16 @@ export default {
               starWidth: 15,
               starHeight: 15
             },
-            // total: 20
+            total: 0
         }
     },
-    computed: {
+    watch: {
         calcTotal() {
-            let total = 0;
-            this.cart.forEach((item, i) => {
-                total += item.price * item.quantity
+            this.total = 0;
+            this.cart.forEach((item) => {
+                // console.log("qwqw" + item.price)
+                this.total += item.price
             });
-            return total
         }
     }
 }
