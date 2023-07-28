@@ -5,7 +5,7 @@
     <LineAnimate stage="stage1" />
     <div class="border-4 border-green-600 w-[100%] h-[auto] text-center py-28">
         <div class="border-2 border-red-700 w-[80%] h-[auto] mx-[auto]">
-            <Cart :cartProducts="cart"/>
+            <Cart :cartProducts="cart" :total="total"/>
         </div>
     </div>
     <Choose />
@@ -28,9 +28,19 @@ export default {
               emptyStarColor: '#737373',
               starWidth: 15,
               starHeight: 15
-          }
+            },
+            // total: 20
         }
     },
+    computed: {
+        calcTotal() {
+            let total = 0;
+            this.cart.forEach((item, i) => {
+                total += item.price * item.quantity
+            });
+            return total
+        }
+    }
 }
 </script>
 

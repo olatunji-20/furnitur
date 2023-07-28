@@ -1,4 +1,8 @@
 import { defineStore } from 'pinia'
+// import { useRouter } from 'vue-router'
+
+// const router = useRouter();
+
 
 export const useProductsStore = defineStore('productsStore', {
     state: () => ({
@@ -42,14 +46,17 @@ export const useProductsStore = defineStore('productsStore', {
                 })
             }
 
-
-
             console.log("EXISTTTT" + existingItem)
             console.log(existingItem)
             console.log("AAAAA" + this.cartItems)
             console.log(this.cartItems)
             console.log(payload.number)
             console.log(payload.product)
+        },
+        removeFromCart(id) {
+            this.cartItems = this.cartItems.filter(c => c.id !== id);
+            // this.$router.push({ path: "/CartPage" })
+            console.log("OPE O" + id)
         }
     },
     persist: true

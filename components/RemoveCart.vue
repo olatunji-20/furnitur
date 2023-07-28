@@ -1,6 +1,6 @@
 <template>
   <div class="border border-red-300 cursor-pointer text-red-600 font-bold text-md px-1">
-    <i @click="removeFromCart(id)">&#x2715;</i>
+    <i @click="productsStore.removeFromCart(id)">&#x2715;</i>
   </div>
 </template>
 
@@ -11,19 +11,10 @@ export default {
     data() {
         const productsStore = useProductsStore();
 
-        const cart = productsStore.cartItems
-        return {
-            cart
-        }
+        return { productsStore }
     },
   props: {
     id: Number
-  },
-  methods: {
-    removeFromCart(id) {
-      // this.cart = this.cart.filter(c => c.id !== id);
-      // console.log(this.cart)
-    }
   }
 }
 </script>

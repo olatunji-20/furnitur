@@ -30,7 +30,7 @@
             <div class="border border-blue-500 w-[80%] h-[auto] mx-[auto] text-left">
                 <h1 class="font-bold text-2xl">ORDER SUMMARY</h1>
                 <p class="mt-4 mb-12 text-sm">Apply your monthly voucher to get more discount!</p>
-                <p class="py-4">Price:</p>
+                <p class="py-4">Price: {{ total }}</p>
                 <p class="py-4">Discount: </p>
                 <p class="py-4">Total Price:</p>
 
@@ -47,7 +47,8 @@ import StarRating from 'vue-dynamic-star-rating'
 
 export default {
     props: {
-        cartProducts: Array
+        cartProducts: Array,
+        total: Number
     },
     setup() {
         return {
@@ -57,18 +58,10 @@ export default {
               emptyStarColor: '#737373',
               starWidth: 18,
               starHeight: 18
-          }
+            }
         }
     },
     components: { StarRating },
-    // methods: {
-    //     increment(qua) {
-    //         qua++
-    //     },
-    //     decrement() {
-    //         this.number--;
-    //     }
-    // },
     watch: {
         number(val) {
         if (val <= 0) {
