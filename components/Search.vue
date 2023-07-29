@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>SEARCH</h1>
+    <h1>SEARvCH</h1>
   </div>
 </template>
 

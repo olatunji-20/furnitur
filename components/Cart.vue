@@ -22,7 +22,7 @@
                     </div>
                     <br />
                     <br />
-                    <p class="font-bold text-2xl float-right mr-10">${{ Math.ceil(c.price * c.quantity) }}</p>
+                    <p class="font-bold text-2xl float-right mr-10">${{ (c.price * c.quantity).toFixed(2) }}</p>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="border border-blue-500 w-[80%] h-[auto] mx-[auto] text-left">
                 <h1 class="font-bold text-2xl">ORDER SUMMARY</h1>
                 <p class="mt-4 mb-12 text-sm">Apply your monthly voucher to get more discount!</p>
-                <p class="py-4">Price: {{ total }}</p>
+                <p class="py-4">Price: <span class="font-bold text-xl">${{ total.toFixed(2) }}</span></p>
                 <p class="py-4">Discount: </p>
                 <p class="py-4">Total Price:</p>
 

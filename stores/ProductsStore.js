@@ -1,7 +1,4 @@
 import { defineStore } from 'pinia'
-// import { useRouter } from 'vue-router'
-
-// const router = useRouter();
 
 
 export const useProductsStore = defineStore('productsStore', {
@@ -55,7 +52,6 @@ export const useProductsStore = defineStore('productsStore', {
         },
         removeFromCart(id) {
             this.cartItems = this.cartItems.filter(c => c.id !== id);
-            // this.$router.push({ path: "/CartPage" })
             console.log("OPE O" + id)
         }
     },
