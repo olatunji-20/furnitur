@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="bg-green-700 w-[100%] py-3 text-white my-0" @click="productsStore.addToCart({ product, number })">Add To Cart</button>
+    <button class="bg-green-700 w-[100%] py-3 text-white my-0" @click="productsStore.addToCart({ product, number }), display()">Add To Cart</button>
   </div>
 </template>
 
@@ -16,6 +16,11 @@ export default {
   props: {
     number: Number,
     product: Object
+  },
+  methods: {
+    display() {
+      this.$emit("show-pop")
+    }
   }
 }
 </script>

@@ -32,7 +32,7 @@
                 <p class="mt-4 mb-12 text-sm">Apply your monthly voucher to get more discount!</p>
                 <p class="py-4">Price: <span class="font-bold text-xl float-right">${{ total.toFixed(2) }}</span></p>
                 <p class="py-4">Discount:  <span class="font-bold text-xl float-right">{{ discount }}%</span></p>
-                <p class="py-4">Total Price:  <span class="font-bold text-xl float-right">${{ ((discount/100) * total.toFixed(2)).toFixed(2) }}</span></p>
+                <p class="py-4">Total Price:  <span class="font-bold text-xl float-right">${{ (total - ((discount/100) * total)).toFixed(2) }}</span></p>
 
                 <NuxtLink to="/Shipping"><button class="bg-red-700 w-[100%] py-2 text-white mt-16">PROCEED TO CHECKOUT</button></NuxtLink>
 

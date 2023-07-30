@@ -1,64 +1,16 @@
 <template>
   <div>
     <div class="border-2 border-blue-600 w-[100%] h-[auto] mt-12">
-        <div class="border-2 border-purple-500 w-[100%] h-[80px] flex justify-between my-2">
+        <div v-for="service in shipping" :key="service.id" class="border-2 border-purple-500 w-[100%] h-[80px] flex justify-between my-2">
             <div class="border-2 border-green-300 w-[50px] h-[100%] text-center pt-[22px]">
                 <input type="radio" />
             </div>
             <div class="border-2 border-yellow-500 w-[300px] h-[100%] pt-[12px]">
-                <h2 class="font-bold">DHL Express</h2>
-                <p class="text-sm">Estimated delivery time: July 20 - August 03</p>
+                <h2 class="font-bold">{{ service.serviceName }}</h2>
+                <p class="text-sm">{{ service.serviceDelivery }}3</p>
             </div>
             <div class="border-2 border-red-300 w-[150px] h-[100%] text-center pt-[22px]">
-                <p>Free shipping</p>
-            </div>
-        </div>
-        <div class="border-2 border-purple-500 w-[100%] h-[80px] flex justify-between my-2">
-            <div class="border-2 border-green-300 w-[50px] h-[100%] text-center pt-[22px]">
-                <input type="radio" />
-            </div>
-            <div class="border-2 border-yellow-500 w-[300px] h-[100%] pt-[12px]">
-                <h2 class="font-bold">FedEx</h2>
-                <p class="text-sm">Estimated delivery time: July 20 - August 03</p>
-            </div>
-            <div class="border-2 border-red-300 w-[150px] h-[100%] text-center pt-[22px]">
-                <p>$25</p>
-            </div>
-        </div>
-        <div class="border-2 border-purple-500 w-[100%] h-[80px] flex justify-between my-2">
-            <div class="border-2 border-green-300 w-[50px] h-[100%] text-center pt-[22px]">
-                <input type="radio" />
-            </div>
-            <div class="border-2 border-yellow-500 w-[300px] h-[100%] pt-[12px]">
-                <h2 class="font-bold">Express Expedition</h2>
-                <p class="text-sm">Estimated delivery time: July 20 - August 03</p>
-            </div>
-            <div class="border-2 border-red-300 w-[150px] h-[100%] text-center pt-[22px]">
-                <p>$35</p>
-            </div>
-        </div>
-        <div class="border-2 border-purple-500 w-[100%] h-[80px] flex justify-between my-2">
-            <div class="border-2 border-green-300 w-[50px] h-[100%] text-center pt-[22px]">
-                <input type="radio" />
-            </div>
-            <div class="border-2 border-yellow-500 w-[300px] h-[100%] pt-[12px]">
-                <h2 class="font-bold">JNE Express</h2>
-                <p class="text-sm">Estimated delivery time: July 20 - August 03</p>
-            </div>
-            <div class="border-2 border-red-300 w-[150px] h-[100%] text-center pt-[22px]">
-                <p>$30</p>
-            </div>
-        </div>
-        <div class="border-2 border-purple-500 w-[100%] h-[80px] flex justify-between my-2">
-            <div class="border-2 border-green-300 w-[50px] h-[100%] text-center pt-[22px]">
-                <input type="radio" />
-            </div>
-            <div class="border-2 border-yellow-500 w-[300px] h-[100%] pt-[12px]">
-                <h2 class="font-bold">POS Indonesia</h2>
-                <p class="text-sm">Estimated delivery time: July 20 - August 03</p>
-            </div>
-            <div class="border-2 border-red-300 w-[150px] h-[100%] text-center pt-[22px]">
-                <p>$35</p>
+                <p>${{ service.servicePrice }}</p>
             </div>
         </div>
     </div>
@@ -106,7 +58,22 @@
 
 <script>
 export default {
+    data() {
+        return {
+            shipping: []
+        }
+    },
+    methods: {
+        async getServices() {
+            const res = await fetch("http://localhost:5000/shipping-services")
+            const services = await res.json()
 
+            this.shipping = services
+        }
+    },
+    mounted() {
+        this.getServices();
+    }
 }
 </script>
 

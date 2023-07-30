@@ -51,8 +51,11 @@ export const useProductsStore = defineStore('productsStore', {
             console.log(payload.product)
         },
         removeFromCart(id) {
-            this.cartItems = this.cartItems.filter(c => c.id !== id);
-            console.log("OPE O" + id)
+            if(confirm("Are you sure you want to remove this item from your cart?")){
+                this.cartItems = this.cartItems.filter(c => c.id !== id);
+                console.log("OPE O" + id)
+            }
+            return false
         }
     },
     persist: true

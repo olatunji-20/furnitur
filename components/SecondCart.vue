@@ -21,9 +21,9 @@
       <div class="border-2 border-green-400 mx-auto w-[95%] h-[auto] pt-6">
         <p class="leading-10 text-gray-500 inline">Subtotal <span class="inline float-right font-bold text-black">${{ totalPrice().toFixed(2) }}</span></p>
         <p v-if="showShip" class="leading-10 text-gray-500">Shipping</p>
-        <p class="leading-10 text-gray-500">Price</p>
+        <p class="leading-10 text-gray-500">Price <span class="inline float-right font-bold text-black">${{ totalPrice().toFixed(2) }}</span></p>
         <p class="leading-10 text-gray-500">Discount  <span class="inline float-right font-bold text-black">{{ discount }}%</span></p>
-        <p class="leading-10 text-gray-500">Total Price</p>
+        <p class="leading-10 text-gray-500">Total Price <span class="inline float-right font-bold text-black">${{ (totalPrice() - ((discount/100) * totalPrice())).toFixed(2) }}</span></p>
 
         <NuxtLink :to="link"><button class="bg-red-900 w-[100%] py-2 text-white mt-16">{{ linkText }}</button></NuxtLink>
       </div>

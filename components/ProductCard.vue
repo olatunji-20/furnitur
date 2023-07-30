@@ -1,5 +1,6 @@
 <template>
   <div class="border-4 border-blue-700 w-[100%] h-[auto] flex flex-wrap justify-around">
+    <Pop :showPop="showPop" />
     <div class="w-[50%] h-[550px] border-4 border-red-700 text-center">
         <h1 class="text-md font-bold text-green-600">{{ product.productName }}</h1>
         <div class="w-[400px] h-[450px] border-2 border-blue-600 mx-[auto] my-12">
@@ -24,7 +25,7 @@
         <!-- NUMBER SECTION-->
         <h1 class="font-bold text-4xl text-red-600">${{ product.productPrice }}</h1>
         <div class="border border-red-600 w-[70%] h-[50px] mt-8 mx-[auto]">
-            <AddCart :number="number" :product="product"/>
+            <AddCart :number="number" :product="product" @show-pop="showIt"/>
         </div>
     </div>
   </div>
@@ -42,7 +43,8 @@ export default {
               emptyStarColor: '#737373',
               starWidth: 15,
               starHeight: 15
-          }
+          },
+          showPop: false
         }
     },
     props: {
@@ -55,6 +57,12 @@ export default {
         },
         decrement() {
             this.number--;
+        },
+        showIt() {
+            this.showPop = true;
+            setTimeout(() => {
+                this.showPop = false
+            }, 5000)
         }
     },
     watch: {
