@@ -18,7 +18,7 @@
                 <div class="border-2 border-blue-600 w-[38%] h-10 p-[5px]">
                     <ul class="flex">
                         <li class="mx-4"><i>℗</i>LOVE</li>
-                        <li class="mx-4"><i>®</i>CART</li>
+                        <li class="mx-4"><NuxtLink to="/CartPage"><i>®</i>CART</NuxtLink></li>
                         <li class="mx-4"><i>Q</i></li>
                     </ul>
                 </div>

@@ -15,7 +15,7 @@
             <h2 class="text-left font-bold text-2xl">YOUR ORDER</h2>
             <div class="border-2 border-green-500 w-[100%] h-[auto] text-left mt-8">
               <p>Review all the products you want to buy.</p>
-              <SecondCart link="/" linkText="CONFIRM MY ORDER" />
+              <SecondCart link="/" linkText="CONFIRM MY ORDER" :showShip="true" />
             </div>
           </div>
         </div>

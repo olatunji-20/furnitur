@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-    <hr class="border-2 border-green-700 w-[90%] my-8 mx-[auto]" />
+    <hr class="border-2 border-green-700 w-[98%] my-8 mx-[auto]" />
     <div class="border-2 border-red-400 w-[100%] h-[auto]">
         <h1 class="font-bold text-2xl">PAYMENT METHOD</h1>
         <p class="text-sm mb-10">Choose what service you want for your transaction</p>

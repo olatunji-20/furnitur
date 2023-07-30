@@ -3,7 +3,7 @@
         <h1 class="font-bold text-3xl">SHOPPING CART</h1>
         <p class="font-bold my-6">THIS IS YOUR CART BASED ON WHAT YOU WANTED TO BUY</p>
     <LineAnimate stage="stage1" />
-    <div class="border-4 border-green-600 w-[100%] h-[auto] text-center py-28">
+    <div class="border-4 border-green-600 w-[100%] h-[auto] text-center py-20">
         <div class="border-2 border-red-700 w-[80%] h-[auto] mx-[auto]">
             <Cart :cartProducts="cart" :total="totalPrice()"/>
         </div>
@@ -39,18 +39,18 @@ export default {
                 total += item.price * item.quantity;
             });
             return total;
-    },
+        },
     },
     computed: {
-        calcTotal() {
-            return this.cart.reduce((current, next) =>
-            current + next.price, 0); 
-            // let total = 32;
-            // this.cart.forEach((item) => {
-            //     total += item.price * item.quantity;
-            // });
-            // return this.total = total;
-        }
+        // calcTotal() {
+        //     return this.cart.reduce((current, next) =>
+        //     current + next.price, 0); 
+        //     // let total = 32;
+        //     // this.cart.forEach((item) => {
+        //     //     total += item.price * item.quantity;
+        //     // });
+        //     // return this.total = total;
+        // }
     }
 }
 </script>

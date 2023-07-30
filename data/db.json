@@ -42,5 +42,37 @@
             "productImage": "../asssets/light.png",
             "review": 3
         }
+    ],
+    "shipping-services" : [
+        {
+            "id": 1,
+            "serviceName": "DHL Express",
+            "serviceDelivery": "Estimated delivery time: July 20 - August 03",
+            "servicePrice": 0
+        },
+        {
+            "id": 2,
+            "serviceName": "FedEx",
+            "serviceDelivery": "Estimated delivery time: July 20 - August 03",
+            "servicePrice": 25
+        },
+        {
+            "id": 3,
+            "serviceName": "Express Expendition",
+            "serviceDelivery": "Estimated delivery time: July 20 - August 03",
+            "servicePrice": 35
+        },
+        {
+            "id": 4,
+            "serviceName": "JNE Express",
+            "serviceDelivery": "Estimated delivery time: July 20 - August 03",
+            "servicePrice": 30
+        },
+        {
+            "id": 5,
+            "serviceName": "POS Indonesia",
+            "serviceDelivery": "Estimated delivery time: July 20 - August 03",
+            "servicePrice": 35
+        }        
     ]
 }

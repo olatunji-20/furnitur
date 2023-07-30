@@ -26,13 +26,13 @@
                 </div>
             </div>
         </div>
-        <div class="border-4 border-red-800 w-[40%] h-[100%] py-12">
+        <div class="border-4 border-red-800 w-[35%] h-[100%] py-12">
             <div class="border border-blue-500 w-[80%] h-[auto] mx-[auto] text-left">
                 <h1 class="font-bold text-2xl">ORDER SUMMARY</h1>
                 <p class="mt-4 mb-12 text-sm">Apply your monthly voucher to get more discount!</p>
-                <p class="py-4">Price: <span class="font-bold text-xl">${{ total.toFixed(2) }}</span></p>
-                <p class="py-4">Discount: </p>
-                <p class="py-4">Total Price:</p>
+                <p class="py-4">Price: <span class="font-bold text-xl float-right">${{ total.toFixed(2) }}</span></p>
+                <p class="py-4">Discount:  <span class="font-bold text-xl float-right">{{ discount }}%</span></p>
+                <p class="py-4">Total Price:  <span class="font-bold text-xl float-right">${{ ((discount/100) * total.toFixed(2)).toFixed(2) }}</span></p>
 
                 <NuxtLink to="/Shipping"><button class="bg-red-700 w-[100%] py-2 text-white mt-16">PROCEED TO CHECKOUT</button></NuxtLink>
 
@@ -58,7 +58,8 @@ export default {
               emptyStarColor: '#737373',
               starWidth: 18,
               starHeight: 18
-            }
+            },
+            discount: 10,
         }
     },
     components: { StarRating },
