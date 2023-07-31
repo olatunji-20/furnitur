@@ -1,18 +1,45 @@
 <template>
-    <div class="w-[100%] h-[100%] border-2 border-red-400 p-32">
-      <h1 class="font-bold text-4xl">SOFA COMPONENT</h1>
-      <h1 class="font-bold text-4xl">SOFA COMPONENT</h1>
-      <h1 class="font-bold text-4xl">SOFA COMPONENT</h1>
-      <h1 class="font-bold text-4xl">SOFA COMPONENT</h1>
+  <transition name="ddd">
+    <div class="w-[100%] h-[100%] border-4 border-red-400 flex flex-wrap">
+      <Card :products="productsStore.products"/>
     </div>
-  </template>
+  </transition>
+</template>
   
   <script>
-  export default {
-      name: 'Sofa'
-  }
-  </script>
+import { useProductsStore } from "../stores/ProductsStore";
+
+export default {
+  name: "Sofa",
+  setup() {
+    const productsStore = useProductsStore();
+    productsStore.getProducts();
+
+    return { productsStore };
+  },
+};
+</script>
   
-  <style>
   
-  </style>
+<style>
+.ddd-enter-from {
+  left: 100%;
+  opacity: 0;
+}
+.ddd-enter-to {
+  left: 0%;
+  opacity: 1;
+}
+.ddd-enter-active {
+  transition: all 2s ease;
+}
+.ddd-leave-from {
+  left: 0%;
+}
+.ddd-leave-to {
+  left: 100%;
+}
+.ddd-leave-active {
+  transition: left 0.4s ease;
+}
+</style>

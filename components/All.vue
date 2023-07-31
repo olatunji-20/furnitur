@@ -14,7 +14,7 @@ export default {
     productsStore.getProducts();
 
     return { productsStore };
-  },
+  }
 };
 </script>
 

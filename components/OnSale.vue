@@ -1,40 +1,46 @@
 <template>
-    <transition name="ddd">
-        <div class="w-[100%] h-[100%] border-8 border-red-400 p-4 relative">
-          <h1 class="font-bold text-4xl">ON-SALE COMPONENT</h1>
-          <h1 class="font-bold text-4xl">ON-SALE COMPONENT</h1>
-          <h1 class="font-bold text-4xl">ON-SALE COMPONENT</h1>
-          <h1 class="font-bold text-4xl">ON-SALE COMPONENT</h1>
-        </div>
-    </transition>
+  <transition name="ddd">
+    <div class="w-[100%] h-[100%] border-4 border-red-800 flex flex-wrap">
+      <Card :products="productsStore.products"
+      />
+    </div>
+  </transition>
 </template>
   
-<script>
-  export default {
-      name: 'OnSale'
-  }
+  <script>
+import { useProductsStore } from "../stores/ProductsStore";
+
+export default {
+  name: "OnSale",
+  setup() {
+    const productsStore = useProductsStore();
+    productsStore.getProducts();
+
+    return { productsStore };
+  },
+};
 </script>
+  
   
 <style>
 .ddd-enter-from {
-    left: 100%;
-    opacity: 0;
+  left: 100%;
+  opacity: 0;
 }
 .ddd-enter-to {
-    left: 0%;
-    opacity: 1;
+  left: 0%;
+  opacity: 1;
 }
 .ddd-enter-active {
-    transition: all 2s ease;
+  transition: all 2s ease;
 }
 .ddd-leave-from {
-    left: 0%;
+  left: 0%;
 }
 .ddd-leave-to {
-    left: 100%;
-}  
-.ddd-leave-active {
-    transition: left .4s ease;
+  left: 100%;
 }
-
-  </style>
+.ddd-leave-active {
+  transition: left 0.4s ease;
+}
+</style>
