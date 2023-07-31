@@ -9,7 +9,7 @@
         <div class="w-[100%] h-[25%] border border-blue-700 pt-6">
           <p>{{ p.productName }}</p>
           <div class="border border-red-500 w-[120px] h-[25px] mx-[auto] my-[2px]">
-            <star-rating :rating="p.review" :starStyle="starStyle"></star-rating>
+            <star-rating :rating="p.review" :starStyle="starStyle" :key="p.id"></star-rating>
           </div>
           <p class="font-bold">${{ p.productPrice }}</p>
         </div>

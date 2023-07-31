@@ -1,7 +1,7 @@
 <template>
   <transition name="ddd">
     <div class="w-[100%] h-[100%] border-4 border-red-800 flex flex-wrap">
-      <Card :products="productsStore.products"
+      <Card :products="onSale" :key="onSale.products"
       />
     </div>
   </transition>
@@ -11,13 +11,22 @@
 import { useProductsStore } from "../stores/ProductsStore";
 
 export default {
-  name: "OnSale",
-  setup() {
-    const productsStore = useProductsStore();
-    productsStore.getProducts();
+  data() {
+        return {
+            onSale: []
+        }
+    },
+    methods: {
+        async getSales() {
+            const res = await fetch("http://localhost:5000/on-sales")
+            const sales = await res.json()
 
-    return { productsStore };
-  },
+            this.onSale = sales
+        }
+    },
+    created() {
+        this.getSales();
+    }
 };
 </script>
   

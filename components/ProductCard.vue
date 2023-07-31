@@ -1,6 +1,6 @@
 <template>
   <div class="border-4 border-blue-700 w-[100%] h-[auto] flex flex-wrap justify-around">
-    <Pop :showPop="showPop" />
+    <Pop :showPop="showPop" :productName="product.productName" :number="number" />
     <div class="w-[50%] h-[550px] border-4 border-red-700 text-center">
         <h1 class="text-md font-bold text-green-600">{{ product.productName }}</h1>
         <div class="w-[400px] h-[450px] border-2 border-blue-600 mx-[auto] my-12">
@@ -62,7 +62,7 @@ export default {
             this.showPop = true;
             setTimeout(() => {
                 this.showPop = false
-            }, 5000)
+            }, 4000)
         }
     },
     watch: {

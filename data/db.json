@@ -43,6 +43,50 @@
             "review": 3
         }
     ],
+    "on-sales": [
+        {
+            "id": 1,
+            "productName": "URBANde LUX HIGH CHAIR",
+            "productPrice": 2668.15,
+            "productImage": "../asssets/chair.png",
+            "review": 5
+        },
+        {
+            "id": 2,
+            "productName": "MODwefERN BLACK HANGING LIGHT",
+            "productPrice": 1595.6,
+            "productImage": "../asssets/hanging.png",
+            "review": 4
+        },
+        {
+            "id": 3,
+            "productName": "METROfr FUSION TABLE",
+            "productPrice": 2238.30,
+            "productImage": "../asssets/table.png",
+            "review": 5
+        },
+        {
+            "id": 4,
+            "productName": "LUMIN fefDESK LAMP",
+            "productPrice": 1477.80,
+            "productImage": "../asssets/lumin.png",
+            "review": 5
+        },
+        {
+            "id": 5,
+            "productName": "TIMELESS EDGE HANGING CLOCK",
+            "productPrice": 1071.6,
+            "productImage": "../asssets/timeless.png",
+            "review": 4
+        },
+        {
+            "id": 6,
+            "productName": "ZENITH PENDANT LIGHT",
+            "productPrice": 2069.59,
+            "productImage": "../asssets/light.png",
+            "review": 3
+        }
+    ],
     "shipping-services" : [
         {
             "id": 1,
