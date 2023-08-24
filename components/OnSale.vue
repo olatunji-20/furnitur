@@ -1,4 +1,28 @@
 <template>
+  <div class="w-[100%] h-[100%] border-4 border-red-400 flex flex-wrap">
+    <Card :products="productsStore.prods" :key="productsStore.prods"/>
+  </div>
+</template>
+
+<script>
+import { useProductsStore } from "../stores/ProductsStore";
+
+export default {
+  name: "Onsale",
+  setup() {
+    const productsStore = useProductsStore();
+    productsStore.getSales();
+
+    return { productsStore };
+  }
+};
+</script>
+
+<style>
+</style>
+
+
+<!-- <template>
   <transition name="ddd">
     <div class="w-[100%] h-[100%] border-4 border-red-800 flex flex-wrap">
       <Card :products="onSale" :key="onSale.products"
@@ -52,4 +76,4 @@ export default {
 .ddd-leave-active {
   transition: left 0.4s ease;
 }
-</style>
+</style> -->

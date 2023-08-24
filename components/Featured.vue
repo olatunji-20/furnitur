@@ -8,10 +8,10 @@
             <ul class="inline-block mx-4 font-bold border border-blue-700 cursor-pointer" :class="showD? 'active' : 'non-active'" v-on:click="onHang">HANGING LIGHT</ul>
         </ul>
         <div class="w-[85%] h-[auto] border-4 border-green-500 my-16 mx-[auto] overflow-hidden">
-            <All v-show="showA" />
-            <OnSale v-show="showB" />
-            <Sofa v-show="showC" />
-            <HangingLight v-show="showD" />
+            <All v-if="showA" />
+            <OnSale v-if="showB" />
+            <Sofa v-if="showC" />
+            <HangingLight v-if="showD" />
         </div>
     </div>
 </template>

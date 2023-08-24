@@ -99,7 +99,7 @@ import StarRating from 'vue-dynamic-star-rating'
   export default {
     setup() {
       return {
-        rating: 5,
+        rating: 4,
         starStyle: {
               fullStarColor: '#ed8a19',
               emptyStarColor: '#737373',
