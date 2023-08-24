@@ -15,9 +15,9 @@
                         <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
                     </div>
                     <p class="font-bold">${{ c.price }}</p>
-                    <div class="border-2 border-blue-400 mr-4 w-[150px] h-[40px] flex justify-around float-right rounded-md">
+                    <div class="border border-blue-400 mr-4 w-[150px] h-[40px] bg-gray-100 flex justify-around float-right rounded-md">
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity--">-</span>
-                        <input v-model="c.quantity" class="inputer w-[50px] font-bold text-xl text-center" type="number" :placeholder="number"/>
+                        <input v-model="c.quantity" class="inputer w-[50px] font-bold bg-gray-100 text-xl text-center" type="number" :placeholder="number"/>
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity++">+</span>
                     </div>
                     <br />
