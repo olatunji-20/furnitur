@@ -2,7 +2,7 @@
   <div class="border-4 border-blue-800 w-[100%] h-[auto] flex flex-wrap justify-around">
     
     <div class="w-[300px] h-[480px] border-2 border-green-400 my-12" v-for="p in products" :key="p.id">
-      <NuxtLink :to="`/product/${p.id}`">
+      <NuxtLink :to="link + `${p.id}`">
         <div class="w-[100%] h-[75%] border border-red-700">
           <img class="w-[100%] h-[100%] object-cover" :src="p.productImage" :alt="p.productName + p.productPrice" >
         </div>
@@ -39,7 +39,10 @@ export default {
     },
     props: {
       products: Array,
-      link: String
+      link: {
+        type: String,
+        default: () => {{name: 'product'}}
+      }
     
     }
 }

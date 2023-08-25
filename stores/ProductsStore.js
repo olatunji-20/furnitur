@@ -18,11 +18,23 @@ export const useProductsStore = defineStore('productsStore', {
 
             this.products = products
         },
+        async getProduct(id) {
+            const res = await fetch("http://localhost:5000/products/" + id)
+            const product = await res.json()
+
+            this.product = product
+        },
         async getSales() {
             const res = await fetch("http://localhost:5000/on-sales")
             const prods = await res.json()
 
             this.prods = prods
+        },
+        async getOnSalesProduct(id) {
+            const res = await fetch("http://localhost:5000/on-sales/" + id)
+            const product = await res.json()
+
+            this.product = product
         },
         async getSofa() {
             const res = await fetch("http://localhost:5000/sofa")
@@ -35,12 +47,6 @@ export const useProductsStore = defineStore('productsStore', {
             const hangs = await res.json()
 
             this.hangProds = hangs
-        },
-        async getProduct(id) {
-            const res = await fetch("http://localhost:5000/products/" + id)
-            const product = await res.json()
-
-            this.product = product
         },
         addToCart(payload) {
             const existingItem = this.cartItems.find(item => {
