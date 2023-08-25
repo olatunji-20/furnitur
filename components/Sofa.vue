@@ -1,14 +1,22 @@
 <template>
-  <transition name="ddd">
-    <div class="w-[100%] h-[100%] border-4 border-red-400 flex flex-wrap">
-      <h1>SOFA SECTION</h1>
-    </div>
-  </transition>
+  <div class="w-[100%] h-[100%] border-4 border-red-400 flex flex-wrap">
+    <Card :products="productsStore.sofaProds" :key="productsStore.sofaProds"/>
+  </div>
 </template>
-  
+
 <script>
+import { useProductsStore } from "../stores/ProductsStore";
+
+export default {
+  name: "Sofa",
+  setup() {
+    const productsStore = useProductsStore();
+    productsStore.getSofa();
+
+    return { productsStore };
+  }
+};
 </script>
-  
-  
+
 <style>
 </style>

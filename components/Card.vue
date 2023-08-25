@@ -37,7 +37,11 @@ export default {
     components: {
         StarRating
     },
-    props: {products: Array}
+    props: {
+      products: Array,
+      link: String
+    
+    }
 }
 </script>
 

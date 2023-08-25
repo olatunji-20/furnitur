@@ -5,6 +5,8 @@ export const useProductsStore = defineStore('productsStore', {
     state: () => ({
         products: [],
         prods: [],
+        sofaProds: [],
+        hangProds: [],
         product: {},
         cartItems: []
     }),
@@ -21,6 +23,18 @@ export const useProductsStore = defineStore('productsStore', {
             const prods = await res.json()
 
             this.prods = prods
+        },
+        async getSofa() {
+            const res = await fetch("http://localhost:5000/sofa")
+            const sofa = await res.json()
+
+            this.sofaProds = sofa
+        },
+        async getHang() {
+            const res = await fetch("http://localhost:5000/hanging")
+            const hangs = await res.json()
+
+            this.hangProds = hangs
         },
         async getProduct(id) {
             const res = await fetch("http://localhost:5000/products/" + id)
