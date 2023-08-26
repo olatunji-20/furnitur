@@ -1,6 +1,6 @@
 <template>
   <div class="w-[100%] h-[100%] border-4 border-red-400 flex flex-wrap">
-    <Card :products="productsStore.sofaProds" :key="productsStore.sofaProds"/>
+    <Card :link="'/sofa/'" :products="productsStore.sofaProds" :key="productsStore.sofaProds"/>
   </div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>SEARvCH</h1>
+    <form>
+      <input type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
+    </form>
   </div>
 </template>
 
@@ -12,4 +14,4 @@ export default {
 
 <style>
 
-</style>
+</style> 
