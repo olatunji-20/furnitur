@@ -40,17 +40,6 @@ export default {
             });
             return total;
         },
-    },
-    computed: {
-        // calcTotal() {
-        //     return this.cart.reduce((current, next) =>
-        //     current + next.price, 0); 
-        //     // let total = 32;
-        //     // this.cart.forEach((item) => {
-        //     //     total += item.price * item.quantity;
-        //     // });
-        //     // return this.total = total;
-        // }
     }
 }
 </script>

@@ -32,7 +32,7 @@
         </div>
         <div v-show="!showMenu" class="border-2 border-red-500 w-[100%] h-[auto] p-4 z-50 bg-pink-50 absolute">
             
-                <p v-for="product in filteredProducts" :key="product.id" class="cursor-pointer leading-6"><NuxtLink :to="`every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
+                <p v-for="product in filteredProducts" :key="product.id" class="cursor-pointer leading-6"><NuxtLink :to="`/every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
             <p>{{ searchText }}</p>        
         </div>
         <CartBoard />
@@ -51,7 +51,6 @@ export default {
         productsStore.getSofa();
         productsStore.getHang();
 
-        // const searchText = "ligh";
         const allProducts = productsStore.products;
         const onSalesProducts = productsStore.prods;
         const sofaProducts = productsStore.sofaProds;

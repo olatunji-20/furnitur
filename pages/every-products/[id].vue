@@ -1,8 +1,7 @@
 <template>
   <div>
-    <!-- <Pop /> -->
     <div class="border-4 border-red-800">
-      <ProductCard :product="productsStore.product" />
+      <ProductCard :product="searchProduct" />
     </div>
     <Reviews />
     <Best />
@@ -17,15 +16,31 @@ import { useProductsStore } from "../../stores/ProductsStore";
 export default {
   setup() {
     const productsStore = useProductsStore();
+    productsStore.getProducts();
+    productsStore.getSales();
+    productsStore.getSofa();
+    productsStore.getHang();
 
-    return { productsStore };
+    const allProducts = productsStore.products;
+    const onSalesProducts = productsStore.prods;
+    const sofaProducts = productsStore.sofaProds;
+    const hangingLightProducts = productsStore.hangProds;
+
+    const everyProducts = allProducts.concat(
+      onSalesProducts,
+      sofaProducts,
+      hangingLightProducts
+    );
+
+    return {
+      searchProduct: {},
+      everyProducts,
+    };
   },
-  async mounted() {
+  async created() {
     const id = useRoute().params.id;
 
-    const productsStore = useProductsStore();
-
-    await productsStore.getHangingProduct(id);
+    this.searchProduct = this.everyProducts.find((product) => product.id == id);
   },
 };
 </script>
