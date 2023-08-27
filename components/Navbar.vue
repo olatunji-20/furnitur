@@ -30,6 +30,7 @@
                 </div>
             </div>
         </div>
+        <!-- <div v-show="!showMenu" class="border-4 border-red-500 w-[100%] h-[300px] bg-pink-50 absolute"></div> -->
         <CartBoard />
     </div>
 </template>
