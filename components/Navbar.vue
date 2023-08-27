@@ -25,21 +25,44 @@
                 <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
                     <div class="border-2 border-red-400 w-[25px] h-[25px] rounded-full cursor-pointer mt-[5px]" v-on:click="menu"><i>x</i></div>
                     <div class="border-2 border-blue-400 w-[85%] h-[35px]">
-                        <Search />
+                        <input v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div v-show="!showMenu" class="border-4 border-red-500 w-[100%] h-[300px] bg-pink-50 absolute"></div> -->
+        <div v-show="!showMenu" class="border-2 border-red-500 w-[100%] h-[auto] p-4 z-50 bg-pink-50 absolute">
+            
+                <p v-for="product in filteredProducts" :key="product.id" class="cursor-pointer leading-6"><NuxtLink :to="`every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
+            <p>{{ searchText }}</p>        
+        </div>
         <CartBoard />
     </div>
 </template>
 
 <script>
+import { useProductsStore } from '../stores/ProductsStore';
+
 export default {
     name: 'Navbar',
     data() {
+        const productsStore = useProductsStore();
+        productsStore.getProducts();
+        productsStore.getSales();
+        productsStore.getSofa();
+        productsStore.getHang();
+
+        // const searchText = "ligh";
+        const allProducts = productsStore.products;
+        const onSalesProducts = productsStore.prods;
+        const sofaProducts = productsStore.sofaProds;
+        const hangingLightProducts = productsStore.hangProds;
+
+        const everyProducts = allProducts.concat(onSalesProducts, sofaProducts, hangingLightProducts);
+
         return {
+            searchText: "",
+            allProducts,
+            everyProducts,
             showMenu: true
         }
         
@@ -50,6 +73,11 @@ export default {
         },
         menu() {
             this.showMenu = true
+        }
+    },
+    computed: {
+        filteredProducts() {
+        return this.everyProducts.filter(product => product.productName.toLowerCase().includes(this.searchText.toLowerCase()))
         }
     }
 }
