@@ -24,7 +24,7 @@
                 </div>
                 <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
                     <div class="border-2 border-red-400 w-[25px] h-[25px] rounded-full cursor-pointer mt-[5px]" v-on:click="menu"><i>x</i></div>
-                    <div class="border-2 border-blue-400 w-[85%] h-[35px]">
+                    <div class="border-2 border-blue-400 w-[85%] h-[35px] relative">
                         <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
                     </div>
                 </div>
@@ -81,7 +81,7 @@ export default {
     },
     computed: {
         filteredProducts() {
-        return this.everyProducts.filter(product => product.productName.toLowerCase().includes(this.searchText.toLowerCase()))
+            return this.everyProducts.filter(product => product.productName.toLowerCase().includes(this.searchText.toLowerCase()))
         }
     }
 }

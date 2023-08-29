@@ -3,9 +3,7 @@
         <h1 class="text-3xl font-bold text-center">TRUSTED BY</h1>
         <div class="w-[85%] h-[auto] border-2 border-blue-500 mx-[auto] my-8 flex flex-wrap justify-between">
             <div class="border border-red-500 w-[150px] h-[110px] mx-2 my-4">
-                <NuxtLink to="/CartPage">
-                    <img src="../asssets/brand1.png" class="w-[100%] h-[100%] object-cover" />
-                </NuxtLink>
+                <img src="../asssets/brand1.png" class="w-[100%] h-[100%] object-cover" />
             </div>
             <div class="border border-red-500 w-[150px] h-[110px] mx-2 my-4">
                 <img src="../asssets/brand2.png" class="w-[100%] h-[100%] object-cover" />
