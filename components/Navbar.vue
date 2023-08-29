@@ -25,14 +25,13 @@
                 <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
                     <div class="border-2 border-red-400 w-[25px] h-[25px] rounded-full cursor-pointer mt-[5px]" v-on:click="menu"><i>x</i></div>
                     <div class="border-2 border-blue-400 w-[85%] h-[35px]">
-                        <input v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
+                        <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
                     </div>
                 </div>
             </div>
         </div>
-        <div v-show="!showMenu" class="border-2 border-red-500 w-[100%] h-[auto] p-4 z-50 bg-pink-50 absolute">
-            
-                <p v-for="product in filteredProducts" :key="product.id" class="cursor-pointer leading-6"><NuxtLink :to="`/every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
+        <div v-show="showSearch" class="border-2 border-red-500 w-[100%] h-[auto] p-4 z-50 bg-pink-50 absolute">
+            <p v-for="product in filteredProducts" :key="product.id" v-on:click="searched" class="cursor-pointer leading-6"><NuxtLink :to="`/every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
             <p>{{ searchText }}</p>        
         </div>
         <CartBoard />
@@ -62,16 +61,22 @@ export default {
             searchText: "",
             allProducts,
             everyProducts,
-            showMenu: true
+            showMenu: true,
+            showSearch: false
         }
         
     },
     methods: {
         search() {
-            this.showMenu = false
+            this.showMenu = false;
+            this.showSearch = true;
+        },
+        searched() {
+            this.showSearch = false;
         },
         menu() {
-            this.showMenu = true
+            this.showMenu = true;
+            this.showSearch = false;
         }
     },
     computed: {
