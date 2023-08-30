@@ -7,8 +7,11 @@
       <div class="border-2 border-green-700 w-[650px] h-[100%] float-right pt-20 px-12 bg-blue-50">
         <h5 class="leading-10 font-bold">WELCOME TO OUR</h5>
 
-        <h1 class="text-6xl font-bold leading-24">FURNITURE GALLERY</h1>
-        <vueTyperNext data="sheriff" typeSpeed="1000" />
+        <div class="w-[350px] h-[130px]">
+          <!-- <h1 class="text-6xl font-bold leading-24">FURNITURE GALLERY</h1> -->
+          <vueTyperNext class="text-6xl font-bold leading-24" data="FURNITURE GALLERY" typeSpeed=150 handlerNum=5  />
+          
+        </div>
         
         <div class="border border-red-500 w-[200px] h-[0px] mt-6"></div>
         <h5 class="leading-10 font-bold mt-8">BROWSE OUR SELECTIONS</h5>
@@ -103,7 +106,7 @@ import { vueTyperNext } from "vue-typer-next";
   export default {
     setup() {
       return {
-        rating: 4,
+        rating: 4.5,
         starStyle: {
               fullStarColor: '#ed8a19',
               emptyStarColor: '#737373',
