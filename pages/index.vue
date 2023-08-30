@@ -6,7 +6,10 @@
     <section style="background-image: url(../asssets/hero.png);" class="border-4 border-red-900 w-[100%] h-[450px] bg-cover">
       <div class="border-2 border-green-700 w-[650px] h-[100%] float-right pt-20 px-12 bg-blue-50">
         <h5 class="leading-10 font-bold">WELCOME TO OUR</h5>
+
         <h1 class="text-6xl font-bold leading-24">FURNITURE GALLERY</h1>
+        <vueTyperNext data="sheriff" typeSpeed="1000" />
+        
         <div class="border border-red-500 w-[200px] h-[0px] mt-6"></div>
         <h5 class="leading-10 font-bold mt-8">BROWSE OUR SELECTIONS</h5>
         <p>Featuring sleek designs and innovative materials that<br /> seamlessly blend form and function.</p>
@@ -94,7 +97,8 @@ import Choose from '~/components/Choose'
 import Trusted from '~/components/Trusted'
 import Reviews from '~/components/Reviews'
 import Featured from '~/components/Featured'
-import StarRating from 'vue-dynamic-star-rating'
+import StarRating from 'vue-dynamic-star-rating';
+import { vueTyperNext } from "vue-typer-next";
 
   export default {
     setup() {
@@ -113,7 +117,8 @@ import StarRating from 'vue-dynamic-star-rating'
       Trusted,
       Reviews,
       Featured,
-      StarRating
+      StarRating,
+      vueTyperNext
     }
   }
 </script>
