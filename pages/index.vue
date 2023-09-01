@@ -9,7 +9,7 @@
 
         <div class="w-[350px] h-[130px]">
           <!-- <h1 class="text-6xl font-bold leading-24">FURNITURE GALLERY</h1> -->
-          <vueTyperNext class="text-6xl font-bold leading-24" data="FURNITURE GALLERY" typeSpeed=150 handlerNum=5  />
+          <vueTyperNext class="text-6xl font-bold leading-24" data="FURNITURE GALLERY" typeSpeed=150 handlerNum=10  />
           
         </div>
         
@@ -71,7 +71,10 @@
     <section class="border-8 border-red-800 w-[100%] h-[auto] pt-28 pb-44">
       <div class="border-2 border-green-800 w-[85%] h-[300px] mx-[auto] flex justify-between">
         <div class="w-[380px] h-[100%] border border-red-400 p-12">
-          <h2 class="font-bold text-3xl">MODERN BRONZE HANGING LIGHT</h2>
+          <div class="border-2 border-blue-300 w-[auto] h-[90px]">
+            <vueTyperNext class="text-3xl font-bold" data="MODERN BRONZE HANGING LIGHT" typeSpeed=120 handlerNum=80  />
+            <!-- <h2 class="font-bold text-3xl">MODERN BRONZE HANGING LIGHT</h2> -->
+          </div>
           <div class="w-[150px] h-[25px] border border-blue-600 my-4"><star-rating :rating="rating" :star-style="starStyle"></star-rating></div>
           <p class="mt-8 line-through">$3252.41</p>
           <h5 class="font-bold text-2xl inline">$2352.41</h5>
