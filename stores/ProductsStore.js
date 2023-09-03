@@ -1,15 +1,18 @@
 import { defineStore } from 'pinia'
+import { useLocalStorage } from '@vueuse/core'
 
 
 export const useProductsStore = defineStore('productsStore', {
-    state: () => ({
-        products: [],
-        prods: [],
-        sofaProds: [],
-        hangProds: [],
-        product: {},
-        cartItems: []
-    }),
+    state: () => {
+        return {
+            cartItems: useLocalStorage('cartItems', []),
+            products: [],
+            prods: [],
+            sofaProds: [],
+            hangProds: [],
+            product: {}
+        }
+    },
 
     actions: {
         async getProducts() {
@@ -63,19 +66,19 @@ export const useProductsStore = defineStore('productsStore', {
 
             this.product = product
         },
-        
+
         addToCart(payload) {
             const existingItem = this.cartItems.find(item => {
                 return item.id === payload.product.id
             })
 
-            if(existingItem) {
+            if (existingItem) {
                 let existingItemIndex = this.cartItems.findIndex(
                     item => item.id === existingItem.id
                 )
                 this.cartItems[existingItemIndex] = existingItem
                 existingItem.quantity = existingItem.quantity + payload.number
-            }else {
+            } else {
                 this.cartItems.push({
                     id: payload.product.id,
                     productName: payload.product.productName,
@@ -94,12 +97,12 @@ export const useProductsStore = defineStore('productsStore', {
             console.log(payload.product)
         },
         removeFromCart(id) {
-            if(confirm("Are you sure you want to remove this item from your cart?")){
+            if (confirm("Are you sure you want to remove this item from your cart?")) {
                 this.cartItems = this.cartItems.filter(c => c.id !== id);
                 console.log("OPE O" + id)
             }
             return false
         }
     },
-    persist: true
+    // persist: true
 })
