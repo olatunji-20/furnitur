@@ -6,8 +6,8 @@
                     <img class="w-[100%] h-[100%]" src="../asssets/logo.png"/>
                 </div>
             </NuxtLink>
-            <div class="border-2 border-green-700 w-[600px] h-15 flex justify-center p-[2px]">
-                <div v-if="showMenu" class="border-2 border-red-600 w-[62%] h-10 p-[5px]">
+            <div class="lg:border-2 border-green-700 w-[600px] h-15 flex justify-center p-[2px]">
+                <div v-if="showMenu" class="lg:border-2 border-red-600 w-[62%] h-10 p-[5px]">
                     <ul class="flex">
                         <li class="mx-4">HOME</li>
                         <li class="mx-4">SHOP<i>©</i></li>
