@@ -1,4 +1,5 @@
 <template>
+    <DeleteModal />
   <div class="text-center pt-12">
     <h1 class="font-bold text-3xl">SHOPPING CART</h1>
     <p class="font-bold my-6">THIS IS YOUR CART BASED ON WHAT YOU WANTED TO BUY</p>
