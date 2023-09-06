@@ -8,8 +8,8 @@
                 </div>
                 <div class="border border-blue-500 w-[64%] h-[100%] text-left pt-2">
                     <p class="font-bold text-xl inline">{{ c.productName }}</p>
-                    <div class="border-2 border-green-300 w-[30px] h-[30px] inline float-right mr-4">
-                        <RemoveCart :id="c.id" />
+                    <div @click="$emit('show-modal', c.id)" class="border-2 border-blue-700 w-[30px] h-[30px] inline float-right mr-4">
+                        <!-- <RemoveCart :id="c.id" /> -->
                     </div>
                     <div class="border border-red-500 h-[25px] w-[150px] my-2">
                         <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
