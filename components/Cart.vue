@@ -8,7 +8,7 @@
                 </div>
                 <div class="border border-blue-500 w-[64%] h-[100%] text-left pt-2">
                     <p class="font-bold text-xl inline">{{ c.productName }}</p>
-                    <div @click="$emit('show-modal', c.id)" class="border-2 border-blue-700 w-[30px] h-[30px] inline float-right mr-4">
+                    <div v-on:click="prepModal(c.id)" class="border-2 border-blue-700 w-[30px] h-[30px] inline float-right mr-4">
                         <!-- <RemoveCart :id="c.id" /> -->
                     </div>
                     <div class="border border-red-500 h-[25px] w-[150px] my-2">
@@ -46,10 +46,6 @@
 import StarRating from 'vue-dynamic-star-rating'
 
 export default {
-    props: {
-        cartProducts: Array,
-        total: Number
-    },
     setup() {
         return {
             number: 1,
@@ -62,6 +58,17 @@ export default {
             discount: 10,
         }
     },
+    props: {
+        cartProducts: Array,
+        total: Number
+    },
+    methods: {
+        prepModal(id) {
+            console.log("ffff ", id)
+            this.$emit('show-modal', id)
+        }
+    },
+    emits: ['show-modal'],
     components: { StarRating },
     watch: {
         number(val) {
