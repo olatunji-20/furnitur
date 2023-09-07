@@ -8,7 +8,7 @@
 import { useProductsStore } from '../stores/ProductsStore'
 
 export default {
-    setup() {
+  setup() {
         const router = useRouter();
         const productsStore = useProductsStore();
 

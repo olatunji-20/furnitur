@@ -1,5 +1,5 @@
 <template>
-    <DeleteModal v-if="showModal" />
+    <DeleteModal @dont-show="notShow" v-show="displayModal" :id="refId"/>
   <div class="text-center pt-12">
     <h1 class="font-bold text-3xl">SHOPPING CART</h1>
     <p class="font-bold my-6">THIS IS YOUR CART BASED ON WHAT YOU WANTED TO BUY</p>
@@ -18,14 +18,16 @@
 import { useProductsStore } from '../stores/ProductsStore'
 
 export default {
-    setup() {
+    data() {
         const productsStore = useProductsStore();
 
         const cart = productsStore.cartItems
+        // const displayModal = true;
         return {
             total: 0,
-            showModal: false,
+            displayModal: false,
             cart,
+            refId: 0,
             starStyle: {
               fullStarColor: '#ed8a19',
               emptyStarColor: '#737373',
@@ -43,7 +45,12 @@ export default {
             return total;
         },
         showModal(id) {
-            console.log("needee-klndggjn " + id)
+            this.displayModal = true;
+            this.refId = id;
+            console.log("needee-klndggjn " + id);
+        },
+        notShow() {
+            this.displayModal = false;
         }
     }
 }

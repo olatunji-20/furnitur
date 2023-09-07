@@ -3,11 +3,11 @@
     <div class="border-2 border-red-400 w-[500px] h-[400px] rounded-md bg-blue-300 text-center pt-12">
         <h4>Do you want to remove this item from your cart?</h4>
         <div class="border-2 border-green-400 w-[400px] h-[50px] mx-auto my-40 flex justify-between">
-            <div class="border-2 border-yellow-300 w-[150px] h-[45px] rounded-lg bg-red-500">
+            <div @click="modal" class="border-2 border-yellow-300 w-[150px] h-[45px] rounded-lg bg-red-500">
                 <p>CANCEL</p>
             </div>
             <div class="border-2 border-yellow-300 w-[150px] h-[45px] rounded-lg">
-                <RemoveCart />
+                <RemoveCart :id="id" />
             </div>
         </div>
     </div>
@@ -17,7 +17,16 @@
 
 <script>
 export default {
-
+  name: "DeleteModal",
+  props: {
+    id: Number
+  },
+  methods: {
+    modal() {
+      this.$emit('dont-show')
+    }
+  },
+  emits: ['dont-show']
 }
 </script>
 
