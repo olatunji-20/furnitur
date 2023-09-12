@@ -1,40 +1,40 @@
 <template>
     <div>
-        <div class="border-4 border-green-800 py-8 pl-20 pr-32 flex justify-between">
+        <div class="lg:border-4 border-green-800 py-8 pl-20 pr-32 flex justify-between">
             <NuxtLink to="/">
-                <div class="w-[200px] h-[50px] border-2 border-red-900">
-                    <img class="w-[100%] h-[100%]" src="../asssets/logo.png"/>
+                <div class="lg:w-[200px] h-[50px] border-2 border-red-900">
+                    <img class="lg:w-[100%] h-[100%]" src="../asssets/logo.png"/>
                 </div>
             </NuxtLink>
             <div class="lg:border-2 border-green-700 w-[600px] h-15 flex justify-center p-[2px]">
                 <div v-if="showMenu" class="lg:border-2 border-red-600 w-[62%] h-10 p-[5px]">
-                    <ul class="flex">
-                        <li class="mx-4">HOME</li>
-                        <li class="mx-4">SHOP<i>©</i></li>
-                        <li class="mx-4">BLOG</li>
-                        <li class="mx-4">ABOUT US</li>
+                    <ul class="lg:flex">
+                        <li class="lg:mx-4">HOME</li>
+                        <li class="lg:mx-4">SHOP<i>©</i></li>
+                        <li class="lg:mx-4">BLOG</li>
+                        <li class="lg:mx-4">ABOUT US</li>
                     </ul>
                 </div>
-                <div v-if="showMenu" class="border-2 border-blue-600 w-[38%] h-10 p-[5px]">
-                    <ul class="flex">
-                        <li class="mx-4"><i>℗</i>LOVE</li>
-                        <li class="mx-4"><NuxtLink to="/CartPage"><i>®</i>CART</NuxtLink></li>
-                        <li class="mx-4 cursor-pointer" v-on:click="search"><i>Q</i></li>
+                <div v-if="showMenu" class="lg:border-2 border-blue-600 w-[38%] h-10 p-[5px]">
+                    <ul class="lg:flex">
+                        <li class="lg:mx-4"><i>℗</i>LOVE</li>
+                        <li class="lg:mx-4"><NuxtLink to="/CartPage"><i>®</i>CART</NuxtLink></li>
+                        <li class="lg:mx-4 cursor-pointer" v-on:click="search"><i>Q</i></li>
                     </ul>
                 </div>
-                <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
+                <div v-else class="lg:w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
                     <!-- <transition></transition> -->
-                    <div class="flex w-[100%] justify-around">
-                        <div class="border-2 border-red-400 w-[25px] h-[25px] rounded-full cursor-pointer mt-[5px]" v-on:click="menu"><i>x</i></div>
-                        <div class="border-2 border-blue-400 w-[85%] h-[35px] relative">
-                            <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
+                    <div class="lg:flex w-[100%] justify-around">
+                        <div class="lg:border-2 border-red-400 w-[25px] h-[25px] rounded-full cursor-pointer mt-[5px]" v-on:click="menu"><i>x</i></div>
+                        <div class="lg:border-2 border-blue-400 w-[85%] h-[35px] relative">
+                            <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="lg:w-[100%] h-8 indent-4">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div v-show="showSearch" class="border-2 border-red-500 w-[100%] h-[auto] p-4 z-50 bg-pink-50 absolute">
-            <p v-for="product in filteredProducts" :key="product.id" v-on:click="searched" class="cursor-pointer leading-6"><NuxtLink :to="`/every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
+        <div v-show="showSearch" class="lg:border-2 border-red-500 w-[100%] h-[auto] p-4 z-50 bg-pink-50 absolute">
+            <p v-for="product in filteredProducts" :key="product.id" v-on:click="searched" class="lg:cursor-pointer leading-6"><NuxtLink :to="`/every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
             <p>{{ searchText }}</p>        
         </div>
         <CartBoard />
