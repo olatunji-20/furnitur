@@ -1,11 +1,10 @@
 import { defineStore } from 'pinia'
-import { useLocalStorage } from '@vueuse/core'
 
 
 export const useProductsStore = defineStore('productsStore', {
     state: () => {
         return {
-            cartItems: useLocalStorage('cartItems', []),
+            cartItems: [],
             products: [],
             prods: [],
             sofaProds: [],
@@ -100,6 +99,5 @@ export const useProductsStore = defineStore('productsStore', {
             this.cartItems = this.cartItems.filter(c => c.id !== id);
             console.log("OPE O" + id)
         }
-    },
-    // persist: true
+    }
 })

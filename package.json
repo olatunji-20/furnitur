@@ -12,14 +12,12 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
-    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
     "@types/node": "^18",
     "nuxt": "^3.6.1",
     "sass": "^1.63.6"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
-    "@vueuse/core": "^10.4.1",
     "pinia": "^2.1.4",
     "vue-dynamic-star-rating": "^1.0.8",
     "vue-typer-next": "^1.0.1"

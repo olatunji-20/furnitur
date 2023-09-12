@@ -8,8 +8,8 @@
                 </div>
                 <div class="border border-blue-500 w-[64%] h-[100%] text-left pt-2">
                     <p class="font-bold text-xl inline">{{ c.productName }}</p>
-                    <div v-on:click="prepModal(c.id)" class="border-2 border-blue-700 w-[30px] h-[30px] inline float-right mr-4">
-                        <p>D</p>
+                    <div v-on:click="prepModal(c.id)" class="border-2 border-blue-700 inline float-right mr-4 cursor-pointer">
+                        <p class="font-bold text-2xl">&#x2715;</p>
                     </div>
                     <div class="border border-red-500 h-[25px] w-[150px] my-2">
                         <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
