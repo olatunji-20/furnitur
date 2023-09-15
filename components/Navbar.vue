@@ -3,7 +3,7 @@
         <div class="border-4 border-green-800 py-8 pl-4 pr-8 flex justify-between">
             <NuxtLink to="/">
                 <div class="w-[200px] h-[50px] border-2 border-red-900">
-                    <img class="w-[100%] h-[100%]" src="../asssets/logo.png"/>
+                    <img class="w-[100%] h-[100%]" src="../assets/logo.png"/>
                 </div>
             </NuxtLink>
             <div class="hidden border-2 border-green-700 w-[auto] h-15 p-[2px] sm:flex justify-center">

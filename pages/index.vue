@@ -3,7 +3,7 @@
 
     <!-- LANDING SECTION -->
 
-    <section style="background-image: url(../asssets/hero.png);" class="border-4 border-red-900 w-[100%] h-[450px] bg-cover flex flex-row justify-end">
+    <section style="background-image: url(../assets/hero.png);" class="border-4 border-red-900 w-[100%] h-[450px] bg-cover flex flex-row justify-end">
       
       <!-- <div class="border-2 border-green-700 w-[650px] h-[300px] pt-20 px-12 bg-blue-50"></div> -->
       <div class="border-2 border-green-700 w-[650px] h-[100%] pt-20 px-12 bg-blue-50">
@@ -27,7 +27,7 @@
       <div class="w-[80%] h-[520px] border-2 border-blue-600 mx-[auto] flex justify-between">
         <div class="w-[280px] h-[100%] border-2 border-green-700 bg-red-50 flex flex-col justify-between px-4">
           <div class="w-[70%] h-[200px] border border-red-500" style="position: relative; left: 73px;">
-            <img src="../asssets/d-hang.png"/>
+            <img src="../assets/d-hang.png"/>
           </div>
           <div class="w-[100%] h-[220px] border border-green-500 pt-4">
             <h4 class="font-bold">HANGING LIGHT</h4>
@@ -47,7 +47,7 @@
             <p>View more ></p>
           </div>
           <div class="w-[100%] h-[220px] border border-red-500">
-            <img src="../asssets/cushion.png"/>
+            <img src="../assets/cushion.png"/>
           </div>
         </div>
 
@@ -59,7 +59,7 @@
             <p>View more ></p>
           </div>
           <div class="w-[70%] h-[200px] border border-red-500 relative" style="position: relative; left: 73px;">
-            <img src="../asssets/plstc.png"/>
+            <img src="../assets/plstc.png"/>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
           <p class="bg-red-600 inline ml-6 py-1 px-2 rounded-sm text-white">-30%</p>
         </div>
         <div class="w-[250px] h-[135%] border border-red-400">
-          <img src="../asssets/hang5.png" class="w-[100%] h-[100%]" alt="hanging light"/>
+          <img src="../assets/hang5.png" class="w-[100%] h-[100%]" alt="hanging light"/>
         </div>
         <div class="w-[380px] h-[100%] border border-red-400 py-12 px-2 text-right">
           <p>Stunning lighting feature that combines contemporary style with timeless elegance. Featuring a sleek and
@@ -111,7 +111,7 @@ import { vueTyperNext } from "vue-typer-next";
   export default {
     setup() {
       return {
-        rating: 4.5,
+        rating: 4.7,
         starStyle: {
               fullStarColor: '#ed8a19',
               emptyStarColor: '#737373',

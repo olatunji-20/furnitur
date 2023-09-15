@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style scoped>
-.foot {
+/* .foot {
     line-height: 30px;
     font-size: 15px;
     position: relative;
@@ -67,5 +67,5 @@ export default {
 .foot:hover {
     left: 10px;
     transition: left .2s linear;
-}
+} */
 </style>
