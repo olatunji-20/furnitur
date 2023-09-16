@@ -4,5 +4,9 @@
 
 
 .foot {
-    @apply font-bold text-3xl text-green-500
+    @apply leading-8 relative left-0 cursor-pointer transition-all;
+}
+
+.foot:hover {
+    @apply left-4;
 }

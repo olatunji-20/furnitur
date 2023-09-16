@@ -1,12 +1,12 @@
 <template>
   <div>
-    <!-- <div class="border-4 border-red-800">
+    <div class="border-4 border-red-800">
       <ProductCard :product="productsStore.product" />
     </div>
     <Reviews />
     <Best />
     <Trusted />
-    <Frequent /> -->
+    <Frequent />
   </div>
 </template>
 

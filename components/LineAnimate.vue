@@ -15,28 +15,28 @@
         <div class="border-2 border-red-500 w-[80%] h-[auto] mx-[auto] flex justify-between">
             <div class="border-2 border-blue-500 w-[200px] h-[120px] font-bold text-3xl">
                 <div class="border border-blue-900 w-[40px] h-[40px] mx-[auto] my-[5px] rounded-full">
-                    <img src="../asssets/call.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <img src="../assets/call.png" alt="" class="w-[100%] h-[100%] object-cover" />
                 </div>
                 <p class="text-sm">CART</p>
                 <p class="text-sm font-normal">Review all your product and edit the number.</p>
             </div>
             <div class="border-2 border-blue-500 w-[200px] h-[120px] font-bold text-3xl">
                 <div class="border border-blue-900 w-[40px] h-[40px] mx-[auto] my-[5px] rounded-full">
-                    <img src="../asssets/email.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <img src="../assets/email.png" alt="" class="w-[100%] h-[100%] object-cover" />
                 </div>
                 <p class="text-sm">CUSTOMER INFORMATION</p>
                 <p class="text-sm font-normal">Add your name, phone number and address.</p>
             </div>
             <div class="border-2 border-blue-500 w-[200px] h-[120px] font-bold text-3xl">
                 <div class="border border-blue-900 w-[40px] h-[40px] mx-[auto] my-[5px] rounded-full">
-                    <img src="../asssets/badge.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <img src="../assets/badge.png" alt="" class="w-[100%] h-[100%] object-cover" />
                 </div>
                 <p class="text-sm">SHIPPING & PAYMENT</p>
                 <p class="text-sm font-normal">With many payment methods, include yours.</p>
             </div>
             <div class="border-2 border-blue-500 w-[200px] h-[120px] font-bold text-3xl">
                 <div class="border border-blue-900 w-[40px] h-[40px] mx-[auto] my-[5px] rounded-full">
-                    <img src="../asssets/call.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <img src="../assets/call.png" alt="" class="w-[100%] h-[100%] object-cover" />
                 </div>
                 <p class="text-sm">REVIEW</p>
                 <p class="text-sm font-normal">View all your information before confirmation.</p>

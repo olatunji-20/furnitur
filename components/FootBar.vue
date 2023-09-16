@@ -1,7 +1,7 @@
 <template>
     <div class="border-2 border-blue-800 w-[100%] h-[auto] py-4 bg-blue-200">
-        <div class="w-[85%] h-[auto] border-t-4 border-b-4 border-yellow-800 mx-[auto] flex justify-between py-12">
-            <div class="border-2 border-red-500 w-[20%] h-[250px]">
+        <div class="w-[85%] h-[auto] border-t-4 border-b-4 border-yellow-800 mx-[auto] flex flex-col flex-wrap justify-between py-12 sm:flex-row">
+            <div class="border-2 border-red-500 w-[15.625rem] h-[250px]">
                 <h3 class="leading-10 font-bold">CUSTOMER SERVICE</h3>
                 <ul class="foot">Help & FAQs</ul>
                 <ul class="foot">Return & Refund</ul>
@@ -49,23 +49,11 @@
 
 <script>
 export default {
-    name: 'FootBar',
-    setup() {
-
-    }
+    name: 'FootBar'
 }
 </script>
 
 <style scoped>
-/* .foot {
-    line-height: 30px;
-    font-size: 15px;
-    position: relative;
-    left: 0px;
-    cursor: pointer;
-}
-.foot:hover {
-    left: 10px;
-    transition: left .2s linear;
-} */
+
+
 </style>
