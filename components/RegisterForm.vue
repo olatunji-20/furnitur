@@ -8,7 +8,7 @@
         <input class="border-b border-red-400 w-[48%] mt-4 text-sm py-3" placeholder="Password" type="password" />
         <input class="border-b border-red-400 w-[48%] mt-4 text-sm py-3" placeholder="Retype password" type="password" />
         <NuxtLink to="/Customer">
-            <button class="px-20 py-2 mt-12 text-white bg-green-500">Create an account</button>
+            <button class="px-24 py-4 mt-12 text-white bg-green-500">Create an account</button>
         </NuxtLink>
       <!-- </form> -->
     </div>

@@ -17,7 +17,7 @@
           <h1 class="font-bold text-2xl">DISCOUNT 25% FOR NEW MEMBER</h1>
         </div>
         <div class="border-2 border-green-400 w-[200px] h-[100%]">
-          <img src="../asssets/hang5.png" class="w-[100%] h-[100%]" alt="hanging light"/>
+          <img src="../assets/hang5.png" class="w-[100%] h-[100%]" alt="hanging light"/>
         </div>
       </div>
     </div>
