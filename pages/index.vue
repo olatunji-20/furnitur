@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1 class="announcemenst font-bold text-4xl">THIS WEBPAGE IS ONLY VISIBLE ON LARGE SCREENS</h1>
 
     <!-- LANDING SECTION -->
 
@@ -11,7 +12,7 @@
 
         <div class="w-[350px] h-[130px]">
           <!-- <h1 class="text-6xl font-bold leading-24">FURNITURE GALLERY</h1> -->
-          <vueTyperNext class="text-6xl font-bold leading-24" data="FURNITURE GALLERY" typeSpeed=150 handlerNum=10  />
+          <vueTyperNext class="text-6xl font-bold leading-24" data="FURNITURE GALLERY" typeSpeed=150 handlerNum=20  />
           
         </div>
         
@@ -139,5 +140,18 @@ body, html {
     margin: 0px !important;
     padding: 0px !important;
     font-size: 16px;
+}
+.announcement {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    display: none;
+  }
+
+  .announcement {
+    display: inline-block;
+  }
 }
 </style>

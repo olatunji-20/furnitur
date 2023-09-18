@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.footcard {
+    @apply border-2 border-red-500 w-[100%] h-[250px] mt-4 sm:w-[45%] md:w-[13rem]
+}
 .foot {
     @apply leading-8 relative left-0 cursor-pointer transition-all;
 }
 
 .foot:hover {
     @apply left-4;
+}
+
+
+.social {
+    @apply w-[35px] h-[35px] border border-green-700
 }
