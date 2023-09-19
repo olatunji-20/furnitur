@@ -10,7 +10,7 @@
         <transition-group name="review" tag="div">
           <div class="border-4 border-blue-700 w-[auto] h-[auto] relative" v-for="i in [currentIndex]" :key="i">
             <div class="border-4 border-green-500 w-[600px] h-[340px] text-center p-1">
-              <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full">{{ currentReview.customerImage }}</div>
+              <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full"><img class="w-[100%] h-[100%] object-cover rounded-full" :src="currentReview.customerImage" :alt="currentReview.customerName"/></div>
               <div class="border border-green-900 w-[150px] h-[30px] mx-[auto] my-2"><star-rating :rating="currentReview.rating" :star-style="starStyle"></star-rating></div>
               <p class="font-bold mt-4">{{ currentReview.comment }}</p>
               <p class="mt-4">- {{ currentReview.customerName }} -</p>
@@ -37,31 +37,31 @@ export default {
           customerName: "Falana Sheriff",
           comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorem ipsum dolor sit amet consectetur adipisicing eli",
           rating: 4,
-          customerImage: "jhjuh"
+          customerImage: "../assets/sheriff.png"
         },
         {
           customerName: "Larry Johnson",
           comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorohiogn;ngRem ipsum dolor sit amet consectetur adipisicing eli",
           rating: 5,
-          customerImage: "jgferge"
+          customerImage: "../assets/larry.png"
         },
         {
           customerName: "Olatunji Phalana",
           comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli eghirnagnr nrLorem ipsum dolor sit amet consectetur adipisicing eli",
           rating: 3,
-          customerImage: "jhegejuh"
+          customerImage: "../assets/jenifer.png"
         },
         {
           customerName: "Larry4 Johnson",
           comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli guergierioh iroehoie Lorem ipsum dolor sit amet consectetur adipisicing eli",
           rating: 4,
-          customerImage: "jhjwewruh"
+          customerImage: "../assets/chris.png"
         },
         {
           customerName: "Larry4 Johnson",
           comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli guergierioh iroehoie Lorem ipsum dolor sit amet consectetur adipisicing eli",
           rating: 1,
-          customerImage: "jhjwewruh"
+          customerImage: "../assets/roqibah.png"
         }
       ],
       starStyle: {
