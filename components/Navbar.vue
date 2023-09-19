@@ -6,8 +6,8 @@
                     <img class="w-[100%] h-[100%]" src="../assets/logo.png"/>
                 </div>
             </NuxtLink>
-            <div class="hidden border-2 border-green-700 w-[auto] h-15 p-[2px] sm:flex justify-center">
-                <div v-if="showMenu" class="sm:hidden border-2 border-red-600 w-[62%] h-10 p-[5px] lg:block">
+            <div class="border-2 border-green-700 w-[600px] h-15 p-[2px] flex flex-row">
+                <div v-if="showMenu" class="border-2 border-red-600 w-[auto] h-10 p-[5px]">
                     <ul class="flex">
                         <li class="mx-4">HOME</li>
                         <li class="mx-4">SHOP<i>©</i></li>
@@ -23,10 +23,9 @@
                     </ul>
                 </div>
                 <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
-                    <!-- <transition></transition> -->
                     <div class="flex w-[100%] justify-around">
                         <div class="border-2 border-red-400 w-[25px] h-[25px] rounded-full cursor-pointer mt-[5px]" v-on:click="menu"><i>x</i></div>
-                        <div class="border-2 border-blue-400 w-[85%] h-[35px] relative">
+                        <div class="border-2 border-blue-400 w-[300px] h-[35px] relative">
                             <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
                         </div>
                     </div>

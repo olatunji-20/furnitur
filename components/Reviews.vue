@@ -1,91 +1,75 @@
 <template>
-  <div class="border-4 border-blue-900 w-[100%] h-[auto] py-28 px-8">
+  <div class="border-4 border-blue-900 w-[100%] h-[auto] py-20 px-8">
     <h1 class="text-3xl font-bold text-center">REVIEWS BY CUSTOMERS</h1>
     <h4 class="font-bold text-center leading-10">What our customers think about us.</h4>
-    <div class="border-2 border-red-800 w-[90%] h-[auto] mx-[auto] my-12 p-4 overflow-auto">
-      <div class="border-2 border-blue-900 w-[1000px] h-[auto] p-4 flex flex-row justify-between">
-        <!-- <div class="border-2 border-green-500 w-[600px] h-[340px] text-center p-1">
-          <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full"></div>
-            <div class="border border-green-900 w-[250px] h-[30px] mx-[auto] my-2"></div>
-            <p class="font-bold mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos incidunt inventore totam mollitia 
-              consectetur, nihil est? Sapiente autem facere placeat esse, aut quis blanditiis aperiam corporis, laboriosam officia alias.</p>
-            <p class="mt-4">- Larry Johnson -</p>
-        </div> -->
+    <div class="border-2 border-red-800 w-[90%] h-[auto] mx-[auto] my-12 p-4 overflow-hidden">
+      <div class="border-2 border-blue-900 w-[auto] h-[350px] flex flex-row justify-between overflow-hidden">   
         
-        
-        
-        <div class="w-[40px] h-[40px] border-2 border-red-700" @click="next">P</div>
+        <div class="w-[50px] h-[50px] border-2 border-red-700 relative top-36 cursor-pointer rounded-full text-center pt-1" @click="next">P</div>
 
-        <div class="border-4 border-blue-700 w-[auto] h-[auto]" v-for="i in [currentIndex]" :key="i">
-          <div class="border-4 border-green-500 w-[600px] h-[340px] text-center p-1">
-            <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full">{{ currentReview.customerImage }}</div>
-            <div class="border border-green-900 w-[250px] h-[30px] mx-[auto] my-2">{{ currentReview.rating }}</div>
-            <p class="font-bold mt-4">{{ currentReview.comment }}</p>
-            <p class="mt-4">{{ currentReview.customerName }}</p>
-          </div>    
-        </div>
+        <transition-group name="review" tag="div">
+          <div class="border-4 border-blue-700 w-[auto] h-[auto] relative" v-for="i in [currentIndex]" :key="i">
+            <div class="border-4 border-green-500 w-[600px] h-[340px] text-center p-1">
+              <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full">{{ currentReview.customerImage }}</div>
+              <div class="border border-green-900 w-[150px] h-[30px] mx-[auto] my-2"><star-rating :rating="currentReview.rating" :star-style="starStyle"></star-rating></div>
+              <p class="font-bold mt-4">{{ currentReview.comment }}</p>
+              <p class="mt-4">- {{ currentReview.customerName }} -</p>
+            </div>    
+          </div>
+        </transition-group>
 
-        <div class="w-[40px] h-[40px] border-2 border-red-700" @click="prev">N</div>
+        <div class="w-[50px] h-[50px] border-2 border-red-700 relative top-36 cursor-pointer rounded-full text-center pt-1" @click="prev">N</div>
 
-
-
-        <!-- <div class="border-2 border-green-500 w-[600px] h-[340px] text-center p-1">
-          <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full"></div>
-            <div class="border border-green-900 w-[250px] h-[30px] mx-[auto] my-2"></div>
-            <p class="font-bold mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos incidunt inventore totam mollitia 
-              consectetur, nihil est? Sapiente autem facere placeat esse, aut quis blanditiis aperiam corporis, laboriosam officia alias.</p>
-            <p class="mt-4">- Larry Johnson -</p>
-        </div>
-        <div class="border-2 border-green-500 w-[600px] h-[340px] text-center p-1">
-          <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full"></div>
-            <div class="border border-green-900 w-[250px] h-[30px] mx-[auto] my-2"></div>
-            <p class="font-bold mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos incidunt inventore totam mollitia 
-              consectetur, nihil est? Sapiente autem facere placeat esse, aut quis blanditiis aperiam corporis, laboriosam officia alias.</p>
-            <p class="mt-4">- Larry Johnson -</p>
-        </div>
-        <div class="border-2 border-green-500 w-[600px] h-[340px] text-center p-1">
-          <div class="border border-red-800 w-[120px] h-[120px] mx-[auto] my-4 rounded-full"></div>
-            <div class="border border-green-900 w-[250px] h-[30px] mx-[auto] my-2"></div>
-            <p class="font-bold mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos incidunt inventore totam mollitia 
-              consectetur, nihil est? Sapiente autem facere placeat esse, aut quis blanditiis aperiam corporis, laboriosam officia alias.</p>
-            <p class="mt-4">- Larry Johnson -</p>
-        </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import StarRating from 'vue-dynamic-star-rating';
+
 export default {
   name: 'Reviews',
   data() {
     return {
       reviews: [
         {
+          customerName: "Falana Sheriff",
+          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorem ipsum dolor sit amet consectetur adipisicing eli",
+          rating: 4,
+          customerImage: "jhjuh"
+        },
+        {
           customerName: "Larry Johnson",
-          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorem ipsum dolor sit amet consectetur adipisicing eli",
-          rating: 4,
-          customerImage: "jhjuh"
+          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorohiogn;ngRem ipsum dolor sit amet consectetur adipisicing eli",
+          rating: 5,
+          customerImage: "jgferge"
         },
         {
-          customerName: "Larry2 Johnson",
-          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorem ipsum dolor sit amet consectetur adipisicing eli",
-          rating: 4,
-          customerImage: "jhjuh"
-        },
-        {
-          customerName: "Larry3 Johnson",
-          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorem ipsum dolor sit amet consectetur adipisicing eli",
-          rating: 4,
-          customerImage: "jhjuh"
+          customerName: "Olatunji Phalana",
+          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli eghirnagnr nrLorem ipsum dolor sit amet consectetur adipisicing eli",
+          rating: 3,
+          customerImage: "jhegejuh"
         },
         {
           customerName: "Larry4 Johnson",
-          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli Lorem ipsum dolor sit amet consectetur adipisicing eli",
+          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli guergierioh iroehoie Lorem ipsum dolor sit amet consectetur adipisicing eli",
           rating: 4,
-          customerImage: "jhjuh"
+          customerImage: "jhjwewruh"
+        },
+        {
+          customerName: "Larry4 Johnson",
+          comment: "Lorem ipsum dolor sit amet consectetur adipisicing eli guergierioh iroehoie Lorem ipsum dolor sit amet consectetur adipisicing eli",
+          rating: 1,
+          customerImage: "jhjwewruh"
         }
       ],
+      starStyle: {
+              fullStarColor: '#ed8a19',
+              emptyStarColor: '#737373',
+              starWidth: 18,
+              starHeight: 18
+          },
       timer: null,
       currentIndex: 0
     }
@@ -101,6 +85,9 @@ export default {
       this.currentIndex -= 1;
     }
   },
+  components: {
+    StarRating
+  },
   mounted() {
     this.startSlide();
   },
@@ -113,5 +100,20 @@ export default {
 </script>
 
 <style>
+.review-enter-from {
+  left: 200px;
+}
+.review-enter-to, .review-leave-from {
+  left: 0px;
+}
+.review-enter-active {
+  transition: all 1s ease;
+}
+.review-leave-to {
+  left: 0px;
+}
+.review-leave-active {
+  transition: all 0s ease;
+}
 
 </style>
