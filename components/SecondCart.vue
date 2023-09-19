@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="border-2 border-red-600 w-[100%] h-[auto] mt-8">
-      <div class="border-2 border-green-400 mx-auto w-[95%] min-h-[100px] max-h-[400px] overflow-y-auto">
-        <div class="border-2 border-red-400 w-[100%] h-[100px] flex justify-between mb-4" v-for="c in cart" :key="c.id">
+      <div class="border-2 border-green-400 mx-auto w-[95%] min-h-[6.25rem] max-h-[25rem] overflow-y-auto">
+        <div class="border-2 border-red-400 w-[100%] h-[6.25rem] flex justify-between mb-4" v-for="c in cart" :key="c.id">
                 <div class="border border-red-500 w-[30%] h-[100%]">
                     <img class="w-[100%] h-[100%] object-cover" :src="c.image" :alt="c.productName" />
                 </div>
                 <div class="border border-blue-500 w-[68%] h-[100%] text-left pt-1 relative">
                     <p class="font-bold text-sm">{{ c.productName }}</p>
                     <div class="w-[100%] h-auto absolute bottom-0">
-                      <div class="border border-red-500 h-[auto] w-[100px]">
+                      <div class="border border-red-500 h-[auto] w-[6.25rem]">
                           <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
                       </div>
                       <p class="font-bold text-sm">${{ c.price }}</p>

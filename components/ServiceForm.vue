@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="border-2 border-blue-600 w-[100%] h-[auto] mt-12">
-        <div v-for="service in shipping" :key="service.id" class="border-2 border-purple-500 w-[100%] h-[80px] flex justify-between my-2">
-            <div class="border-2 border-green-300 w-[50px] h-[100%] text-center pt-[22px]">
+        <div v-for="service in shipping" :key="service.id" class="border-2 border-purple-500 w-[100%] h-[5rem] flex justify-between my-2">
+            <div class="border-2 border-green-300 w-[3.125rem] h-[100%] text-center pt-[1.375rem]">
                 <input type="radio" />
             </div>
-            <div class="border-2 border-yellow-500 w-[300px] h-[100%] pt-[12px]">
+            <div class="border-2 border-yellow-500 w-[18.75rem] h-[100%] pt-[0.75rem]">
                 <h2 class="font-bold">{{ service.serviceName }}</h2>
                 <p class="text-sm">{{ service.serviceDelivery }}3</p>
             </div>
-            <div class="border-2 border-red-300 w-[150px] h-[100%] text-center pt-[22px]">
+            <div class="border-2 border-red-300 w-[9.375rem] h-[100%] text-center pt-[1.375rem]">
                 <p>${{ service.servicePrice }}</p>
             </div>
         </div>
@@ -18,29 +18,29 @@
     <div class="border-2 border-red-400 w-[100%] h-[auto]">
         <h1 class="font-bold text-2xl">PAYMENT METHOD</h1>
         <p class="text-sm mb-10">Choose what service you want for your transaction</p>
-        <div class="border-2 border-green-400 w-[100%] h-[100px] flex justify-between">
+        <div class="border-2 border-green-400 w-[100%] h-[6.25rem] flex justify-between">
             <div class="border border-red-300 w-[48%] h-[100%] flex justify-between">
-                <div class="border-2 border-green-300 w-[10%] h-[100%] text-center pt-[30px]">
+                <div class="border-2 border-green-300 w-[10%] h-[100%] text-center pt-[1.875rem]">
                     <input type="radio" />
                 </div>
-                <div class="border-2 border-yellow-500 w-[89%] h-[100%] pt-[5px]">
+                <div class="border-2 border-yellow-500 w-[89%] h-[100%] pt-[0.3125rem]">
                     <h2 class="font-bold inline">Credit card</h2>
-                    <div class="border border-red-300 w-[100px] h-[20px] inline float-right"></div>
+                    <div class="border border-red-300 w-[6.25rem] h-[1.25rem] inline float-right"></div>
                     <p class="text-sm">You can use all credit service. we can accept Visa and MasterCard.</p>
                 </div>
             </div>
             <div class="border border-red-300 w-[45%] h-[100%] flex justify-between">
-                <div class="border-2 border-green-300 w-[10%] h-[100%] text-center pt-[30px]">
+                <div class="border-2 border-green-300 w-[10%] h-[100%] text-center pt-[1.875rem]">
                     <input type="radio" />
                 </div>
-                <div class="border-2 border-yellow-500 w-[89%] h-[100%] pt-[5px]">
+                <div class="border-2 border-yellow-500 w-[89%] h-[100%] pt-[0.3125rem]">
                     <h2 class="font-bold inline">PayPal</h2>
-                    <div class="border border-red-300 w-[30px] h-[20px] inline float-right"></div>
+                    <div class="border border-red-300 w-[1.875rem] h-[1.25rem] inline float-right"></div>
                     <p class="text-sm">Insert your account email of paypal, We will process your payment.</p>
                 </div>
             </div>
         </div>
-        <div class="border-2 border-purple-400 w-[100%] h-[180px] mt-12">
+        <div class="border-2 border-purple-400 w-[100%] h-[11.25rem] mt-12">
             <h5 class="text-xl font-bold">Provide your information</h5>
             <div class="w-100 h-[auto] flex flex-wrap justify-between">
             <!-- <form> -->

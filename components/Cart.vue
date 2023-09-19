@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="border-4 border-blue-500 w-[100%] h-[auto] flex justify-between wrap">
-        <div class="border-4 border-green-300 w-[60%] min-h-[30px]">
-            <div class="border-2 border-red-400 w-[100%] h-[200px] flex justify-between mb-4" v-for="c in cartProducts" :key="c.id">
+        <div class="border-4 border-green-300 w-[60%] min-h-[1.875rem]">
+            <div class="border-2 border-red-400 w-[100%] h-[12.5rem] flex justify-between mb-4" v-for="c in cartProducts" :key="c.id">
                 <div class="border border-red-500 w-[30%] h-[100%]">
                     <img class="w-[100%] h-[100%] object-cover" :src="c.image" :alt="c.productName" />
                 </div>
@@ -11,13 +11,13 @@
                     <div v-on:click="prepModal(c.id)" class="border-2 border-blue-700 inline float-right mr-4 cursor-pointer">
                         <p class="font-bold text-2xl">&#x2715;</p>
                     </div>
-                    <div class="border border-red-500 h-[25px] w-[150px] my-2">
+                    <div class="border border-red-500 h-[1.5625rem] w-[9.375rem] my-2">
                         <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
                     </div>
                     <p class="font-bold">${{ c.price }}</p>
-                    <div class="border border-blue-400 mr-4 w-[150px] h-[40px] bg-gray-100 flex justify-around float-right rounded-md">
+                    <div class="border border-blue-400 mr-4 w-[9.375rem] h-[2.5rem] bg-gray-100 flex justify-around float-right rounded-md">
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity--">-</span>
-                        <input v-model="c.quantity" class="inputer w-[50px] font-bold bg-gray-100 text-xl text-center" type="number" :placeholder="number"/>
+                        <input v-model="c.quantity" class="inputer w-[3.125rem] font-bold bg-gray-100 text-xl text-center" type="number" :placeholder="number"/>
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity++">+</span>
                     </div>
                     <br />

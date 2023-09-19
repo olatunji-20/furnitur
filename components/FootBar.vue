@@ -33,11 +33,11 @@
                 <ul class="foot">Warranty Repair Center</ul>
             </div>
         </div>
-        <div class="w-[100%] h-[auto] border-2 border-red-800 mx-[auto] flex flex-col justify-between py-[20px] sm:flex-row md:w-[85%]">
-            <div class="h-[40px] w-[380px] border border-red-800 p-[5px]">
+        <div class="w-[100%] h-[auto] border-2 border-red-800 mx-[auto] flex flex-col justify-between py-[1.25rem] sm:flex-row md:w-[85%]">
+            <div class="h-[2.5rem] w-[23.75rem] border border-red-800 p-[0.3125rem]">
                 <p>Furnitur© Copyright 2020, Inc. All rights reserved.</p>
             </div>
-            <div class="h-[35px] w-[200px] border border-red-800 flex justify-between mt-[10px]">
+            <div class="h-[2.1875rem] w-[12.5rem] border border-red-800 flex justify-between mt-[0.625rem]">
                 <div class="social"></div>
                 <div class="social"></div>
                 <div class="social"></div>

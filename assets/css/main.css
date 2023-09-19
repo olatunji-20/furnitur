@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .footcard {
     @apply border-2 border-red-500 w-[100%] h-[250px] mt-4 sm:w-[45%] md:w-[13rem]
 }

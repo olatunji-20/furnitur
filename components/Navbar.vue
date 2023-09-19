@@ -6,8 +6,8 @@
                     <img class="w-[100%] h-[100%]" src="../assets/logo.png"/>
                 </div>
             </NuxtLink>
-            <div class="border-2 border-green-700 w-[auto] h-[auto] p-[2px] flex flex-row">
-                <div v-if="showMenu" class="border-2 border-red-600 w-[380px] h-10 p-[5px]">
+            <div class="border-2 border-green-700 w-[auto] h-[auto] p-[0.125rem] flex flex-row">
+                <div v-if="showMenu" class="border-2 border-red-600 w-[23.75rem] h-10 p-[0.3125rem]">
                     <ul class="flex">
                         <li class="mx-4">HOME</li>
                         <li class="mx-4">SHOP<i>©</i></li>
@@ -15,7 +15,7 @@
                         <li class="mx-4">ABOUT US</li>
                     </ul>
                 </div>
-                <div v-if="showMenu" class="border-2 border-blue-600 w-[230px] h-10 p-[5px]">
+                <div v-if="showMenu" class="border-2 border-blue-600 w-[14.375rem] h-10 p-[0.3125rem]">
                     <ul class="flex">
                         <li class="mx-4"><i>℗</i>LOVE</li>
                         <li class="mx-4"><NuxtLink to="/CartPage"><i>®</i>CART</NuxtLink></li>
@@ -24,8 +24,8 @@
                 </div>
                 <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
                     <div class="flex w-[100%] justify-around">
-                        <div class="border-2 border-red-400 w-[25px] h-[25px] rounded-full cursor-pointer mt-[5px]" v-on:click="menu"><i>x</i></div>
-                        <div class="border-2 border-blue-400 w-[450px] h-[35px] relative">
+                        <div class="border-2 border-red-400 w-[1.5rem] h-[1.5rem] rounded-full cursor-pointer mt-[0.3125rem]" v-on:click="menu"><i>x</i></div>
+                        <div class="border-2 border-blue-400 w-[28.125rem] h-[2.187rem] relative">
                             <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
                         </div>
                     </div>

@@ -159,21 +159,12 @@ export default {
 .last {
   width: 100%;
   height: auto;
-  /* margin-bottom: 7.5rem; */
-  /* padding: 3.5rem; */
   border: 4px solid greenyellow;
 }
-/* .last h1 {
-  font-size: 3rem;
-}
-.last p {
-  font-size: 1.025rem;
-} */
 .study {
   width: 70%;
   height: auto;
   margin: 1rem auto;
-  /* padding: 1.25rem; */
   border: 3px solid orange;
   display: flex;
   flex-direction: column;
