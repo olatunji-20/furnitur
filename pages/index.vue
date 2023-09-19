@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="announcement font-bold text-4xl my-16">THIS WEBPAGE CAN ONLY BE VIEWED ON LARGE SCREENS</h1>
-    <div class="lll border-4 border-purple-900">      
+    <div class="lll">      
           <!-- LANDING SECTION -->
       
           <section style="background-image: url(../assets/hero.png);" class="border-4 border-red-900 w-[100%] h-[450px] bg-cover flex flex-row justify-end">
