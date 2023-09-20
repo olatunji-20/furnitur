@@ -15,28 +15,32 @@
         <div class="border-2 border-red-500 w-[80%] h-[auto] mx-[auto] flex justify-between">
             <div class="border-2 border-blue-500 w-[12.5rem] h-[7.5rem] font-bold text-3xl">
                 <div class="border border-blue-900 w-[2.5rem] h-[2.5rem] mx-[auto] my-[0.3125rem] rounded-full">
-                    <img src="../assets/call.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <Icon name="ic:sharp-shopping-cart" color="black" />
+                    <!-- <img src="../assets/call.png" alt="" class="w-[100%] h-[100%] object-cover" /> -->
                 </div>
                 <p class="text-sm">CART</p>
                 <p class="text-sm font-normal">Review all your product and edit the number.</p>
             </div>
             <div class="border-2 border-blue-500 w-[12.5rem] h-[7.5rem] font-bold text-3xl">
                 <div class="border border-blue-900 w-[2.5rem] h-[2.5rem] mx-[auto] my-[0.3125rem] rounded-full">
-                    <img src="../assets/email.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <Icon name="ic:outline-co-present" color="black" />
+                    <!-- <img src="../assets/email.png" alt="" class="w-[100%] h-[100%] object-cover" /> -->
                 </div>
                 <p class="text-sm">CUSTOMER INFORMATION</p>
                 <p class="text-sm font-normal">Add your name, phone number and address.</p>
             </div>
             <div class="border-2 border-blue-500 w-[12.5rem] h-[7.5rem] font-bold text-3xl">
                 <div class="border border-blue-900 w-[2.5rem] h-[2.5rem] mx-[auto] my-[0.3125rem] rounded-full">
-                    <img src="../assets/badge.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <Icon name="ic:sharp-emoji-transportation" color="black" />
+                    <!-- <img src="../assets/badge.png" alt="" class="w-[100%] h-[100%] object-cover" /> -->
                 </div>
                 <p class="text-sm">SHIPPING & PAYMENT</p>
                 <p class="text-sm font-normal">With many payment methods, include yours.</p>
             </div>
             <div class="border-2 border-blue-500 w-[12.5rem] h-[7.5rem] font-bold text-3xl">
                 <div class="border border-blue-900 w-[2.5rem] h-[2.5rem] mx-[auto] my-[0.3125rem] rounded-full">
-                    <img src="../assets/call.png" alt="" class="w-[100%] h-[100%] object-cover" />
+                    <Icon name="ic:round-content-paste-search" color="black" />
+                    <!-- <img src="../assets/call.png" alt="" class="w-[100%] h-[100%] object-cover" /> -->
                 </div>
                 <p class="text-sm">REVIEW</p>
                 <p class="text-sm font-normal">View all your information before confirmation.</p>
