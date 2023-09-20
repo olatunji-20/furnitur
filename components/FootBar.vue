@@ -21,7 +21,7 @@
                 <h3 class="leading-10 font-bold">HELP CENTER</h3>
                 <ul class="foot">Order Information</ul>
                 <ul class="foot">Shipping Options</ul>
-                <ul class="foot">International Shippimg</ul>
+                <ul class="foot">International Shipping</ul>
                 <ul class="foot">Payment Options</ul>
             </div>
             <div class="footcard">
