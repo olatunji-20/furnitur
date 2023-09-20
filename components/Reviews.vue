@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     startSlide() {
-      this.timer = setInterval(this.nextTick, 4000);
+      this.timer = setInterval(this.next, 4000);
     },
     next() {
       this.currentIndex += 1;

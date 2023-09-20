@@ -1,7 +1,7 @@
 <template>
     <div class="w-[100%] h-[auto] border-4 border-red-900 py-12">
         <h1 class="text-3xl font-bold text-center">TRUSTED BY</h1>
-        <div class="w-[85%] h-[auto] border-2 border-blue-500 mx-[auto] my-8 flex flex-wrap justify-between">
+        <div class="w-[68rem] h-[auto] border-2 border-blue-500 mx-[auto] my-8 flex flex-wrap justify-between">
             <div class="border border-red-500 w-[9.375rem] h-[6.875rem] mx-2 my-4">
                 <img src="../assets/brand1.png" class="w-[100%] h-[100%] object-cover" />
             </div>

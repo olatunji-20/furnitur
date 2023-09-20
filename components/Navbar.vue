@@ -9,17 +9,17 @@
             <div class="border-2 border-green-700 w-[auto] h-[auto] p-[0.125rem] flex flex-row">
                 <div v-if="showMenu" class="border-2 border-red-600 w-[23.75rem] h-10 p-[0.3125rem]">
                     <ul class="flex">
-                        <li class="mx-4">HOME</li>
-                        <li class="mx-4">SHOP<i>©</i></li>
-                        <li class="mx-4">BLOG</li>
-                        <li class="mx-4">ABOUT US</li>
+                        <li class="navi">HOME</li>
+                        <li class="navi">SHOP<i>©</i></li>
+                        <li class="navi">BLOG</li>
+                        <li class="navi">ABOUT US</li>
                     </ul>
                 </div>
                 <div v-if="showMenu" class="border-2 border-blue-600 w-[14.375rem] h-10 p-[0.3125rem]">
                     <ul class="flex">
-                        <li class="mx-4"><i>℗</i>LOVE</li>
-                        <li class="mx-4"><NuxtLink to="/CartPage"><i>®</i>CART</NuxtLink></li>
-                        <li class="mx-4 cursor-pointer" v-on:click="search"><i>Q</i></li>
+                        <li class="navi"><i>℗</i>LOVE</li>
+                        <li class="navi"><NuxtLink to="/CartPage"><i>®</i>CART</NuxtLink></li>
+                        <li class="navi cursor-pointer" v-on:click="search"><i>Q</i></li>
                     </ul>
                 </div>
                 <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">

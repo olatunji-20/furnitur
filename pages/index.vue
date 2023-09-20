@@ -23,7 +23,7 @@
           <!-- HANGING SECTION -->
       
           <section class="border-4 border-red-600 w-[100%] h-[auto] py-28">
-            <div class="w-[80%] h-[32.5rem] border-2 border-blue-600 mx-[auto] flex justify-between">
+            <div class="w-[80%] h-[32rem] border-2 border-blue-600 mx-[auto] flex justify-between">
               <div class="w-[17.5rem] h-[100%] border-2 border-green-700 bg-red-50 flex flex-col justify-between px-4">
                 <div class="w-[70%] h-[12.5rem] border border-red-500" style="position: relative; left: 4.5625rem;">
                   <img src="../assets/d-hang.png"/>

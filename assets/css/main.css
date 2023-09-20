@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.navi {
+    @apply mx-4 relative cursor-pointer left-0 duration-200 hover:left-2
+}
 .footcard {
     @apply border-2 border-red-500 w-[100%] h-[250px] mt-4 sm:w-[45%] md:w-[13rem]
 }
