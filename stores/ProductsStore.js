@@ -99,5 +99,6 @@ export const useProductsStore = defineStore('productsStore', {
             this.cartItems = this.cartItems.filter(c => c.id !== id);
             console.log("OPE O" + id)
         }
-    }
+    },
+    persist: true,
 })

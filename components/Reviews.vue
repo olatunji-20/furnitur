@@ -5,7 +5,9 @@
     <div class="border-2 border-red-800 w-[90%] h-[auto] mx-[auto] my-12 p-4 overflow-hidden">
       <div class="border-2 border-blue-900 w-[auto] h-[21.875rem] flex flex-row justify-between overflow-hidden">   
         
-        <div class="w-[3.125rem] h-[3.125rem] border-2 border-red-700 relative top-36 cursor-pointer rounded-full text-center pt-1" @click="next">P</div>
+        <div class="w-[3.125rem] h-[3.125rem] border-2 border-red-700 relative top-36 cursor-pointer rounded-full text-center pl-2" @click="next">
+          <Icon name="ic:baseline-arrow-back-ios" size="3em" color="red" />
+        </div>
 
         <transition-group name="review" tag="div">
           <div class="border-4 border-blue-700 w-[auto] h-[auto] relative" v-for="i in [currentIndex]" :key="i">
@@ -19,7 +21,9 @@
           </div>
         </transition-group>
 
-        <div class="w-[3.125rem] h-[3.125rem] border-2 border-red-700 relative top-36 cursor-pointer rounded-full text-center pt-1" @click="prev">N</div>
+        <div class="w-[3.125rem] h-[3.125rem] border-2 border-red-700 relative top-36 cursor-pointer rounded-full text-center pr-2" @click="prev">
+          <Icon name="ic:baseline-arrow-forward-ios" size="3em" color="red" />
+        </div>
 
       </div>
     </div>

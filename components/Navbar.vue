@@ -10,21 +10,21 @@
                 <div v-if="showMenu" class="border-2 border-red-600 w-[23.75rem] h-10 p-[0.3125rem]">
                     <ul class="flex">
                         <li class="navi">HOME</li>
-                        <li class="navi">SHOP<i>©</i></li>
+                        <li class="navi">SHOP<Icon name="ic:outline-expand-more" size="1.5em" color="black" class="pb-1" /></li>
                         <li class="navi">BLOG</li>
                         <li class="navi">ABOUT US</li>
                     </ul>
                 </div>
-                <div v-if="showMenu" class="border-2 border-blue-600 w-[14.375rem] h-10 p-[0.3125rem]">
+                <div v-if="showMenu" class="border-2 border-blue-600 w-[15rem] h-10 p-[0.3125rem]">
                     <ul class="flex">
-                        <li class="navi"><i>℗</i>LOVE</li>
-                        <li class="navi"><NuxtLink to="/CartPage"><i>®</i>CART</NuxtLink></li>
-                        <li class="navi cursor-pointer" v-on:click="search"><i>Q</i></li>
+                        <li class="navi"><Icon name="ic:outline-favorite-border" size="1em" color="black" class="pb-1" />LOVE</li>
+                        <li class="navi"><NuxtLink to="/CartPage"><Icon name="ic:outline-shopify" size="1em" color="black" class="pb-1" />CART</NuxtLink></li>
+                        <li class="navi cursor-pointer" v-on:click="search"><Icon name="ic:outline-search" size="1.3em" color="black" class="pb-1" /></li>
                     </ul>
                 </div>
                 <div v-else class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
                     <div class="flex w-[100%] justify-around">
-                        <div class="border-2 border-red-400 w-[1.5rem] h-[1.5rem] rounded-full cursor-pointer mt-[0.3125rem]" v-on:click="menu"><i>x</i></div>
+                        <div class="border-2 border-red-400 w-[1.7rem] h-[1.7rem] rounded-full cursor-pointer mt-[0.3125rem]" v-on:click="menu"><Icon name="ic:twotone-search-off" size="1.5em" color="black" class="pb-1" /></div>
                         <div class="border-2 border-blue-400 w-[28.125rem] h-[2.187rem] relative">
                             <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
                         </div>

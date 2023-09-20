@@ -1,5 +1,5 @@
 <template>
-    <div class="border-2 border-blue-800 w-[100%] h-[auto] bg-blue-200">
+    <div class="border-2 border-blue-800 w-[100%] h-[auto] bg-blue-200 py-4">
         <div class="w-[100%] h-[auto] border-4 border-yellow-800 flex flex-col flex-wrap justify-between px-2 py-12 sm:flex-row md:w-[85%] mx-[auto]">
             <div class="footcard">
                 <h3 class="leading-10 font-bold">CUSTOMER SERVICE</h3>
@@ -38,10 +38,10 @@
                 <p>Furnitur© Copyright 2020, Inc. All rights reserved.</p>
             </div>
             <div class="h-[2.1875rem] w-[12.5rem] border border-red-800 flex justify-between mt-[0.625rem]">
-                <div class="social"></div>
-                <div class="social"></div>
-                <div class="social"></div>
-                <div class="social"></div>
+                <div class="social"><Icon name="ic:baseline-whatsapp" size="2em" /></div>
+                <div class="social"><Icon name="ic:baseline-telegram" size="2em" /></div>
+                <div class="social"><Icon name="ic:baseline-facebook" size="2em" /></div>
+                <div class="social"><Icon name="ic:baseline-snapchat" size="2em" /></div>
             </div>
         </div>
     </div>
