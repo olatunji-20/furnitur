@@ -1,5 +1,5 @@
 <template>
-    <div class="border-2 border-blue-800 w-[100%] h-[auto] bg-blue-200 py-4">
+    <div class="w-[100%] h-[auto] bg-blue-200 py-4">
         <div class="w-[100%] h-[auto] border-4 border-yellow-800 flex flex-col flex-wrap justify-between px-2 py-12 sm:flex-row md:w-[85%] mx-[auto]">
             <div class="footcard">
                 <h3 class="leading-10 font-bold">CUSTOMER SERVICE</h3>
