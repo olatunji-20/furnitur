@@ -3,8 +3,8 @@
     
     <div class="product-card" v-for="p in products" :key="p.id">
       <NuxtLink :to="link + `${p.id}`">
-        <div class="w-[100%] h-[75%] border border-red-700">
-          <img class="w-[100%] h-[100%] object-cover" :src="p.productImage" :alt="p.productName + p.productPrice" >
+        <div class="w-[100%] h-[75%] border border-red-700 overflow-hidden scale-100">
+          <img class="w-[100%] h-[100%] object-cover duration-200 hover:scale-125" :src="p.productImage" :alt="p.productName + p.productPrice" >
         </div>
         <div class="w-[100%] h-[25%] border border-blue-700 pt-6">
           <p>{{ p.productName }}</p>
