@@ -4,9 +4,9 @@
     <div class="lll">      
           <!-- LANDING SECTION -->
       
-          <section style="background-image: url(../assets/hero.png);" class="border-4 border-red-900 w-[100%] h-[28.125rem] bg-cover flex flex-row justify-end">
+          <section style="background-image: url(../assets/hero.png);" class="w-[100%] h-[28.125rem] bg-cover flex flex-row justify-end">
             
-            <div class="border-2 border-green-700 w-[40.625rem] h-[100%] pt-20 px-12 bg-blue-50">
+            <div class="w-[40.625rem] h-[100%] pt-20 px-12">
               <h5 class="leading-10 font-bold">WELCOME TO OUR</h5>
       
               <div class="w-[21.875rem] h-[8.125rem]">
@@ -16,20 +16,20 @@
               
               <div class="border border-red-500 w-[12.5rem] h-[0px] mt-6"></div>
               <h5 class="leading-10 font-bold mt-8">BROWSE OUR SELECTIONS</h5>
-              <p>Featuring sleek designs and innovative materials that<br /> seamlessly blend form and function.</p>
+              <p class=" text-gray-700">Featuring sleek designs and innovative materials that<br /> seamlessly blend form and function.</p>
             </div>
           </section>
       
           <!-- HANGING SECTION -->
       
-          <section class="border-4 border-red-600 w-[100%] h-[auto] py-28">
-            <div class="w-[80%] h-[32rem] border-2 border-blue-600 mx-[auto] flex justify-between">
-              <div class="w-[17.5rem] h-[100%] border-2 border-green-700 bg-red-50 flex flex-col justify-between px-4">
-                <div class="w-[70%] h-[12.5rem] border border-red-500" style="position: relative; left: 4.5625rem;">
+          <section class="w-[100%] h-[auto] py-28">
+            <div class="w-[80%] h-[32rem] mx-[auto] flex justify-between text-gray-700">
+              <div class="w-[17.5rem] h-[100%] bg-gray-50 flex flex-col justify-between px-4">
+                <div class="w-[70%] h-[12.5rem]" style="position: relative; left: 4.5625rem;">
                   <img src="../assets/d-hang.png"/>
                 </div>
-                <div class="w-[100%] h-[13.75rem] border border-green-500 pt-4">
-                  <h4 class="font-bold">HANGING LIGHT</h4>
+                <div class="w-[100%] h-[13.75rem] pt-4">
+                  <h4 class="font-bold text-gray-950">HANGING LIGHT</h4>
                   <p class="mt-2 text-sm w-[85%]">Upgrade your space with our modern hanging light, featuring sleek-lines, energy-efficient
                     LED lighting, and adjustable height.
                   </p>
@@ -38,26 +38,26 @@
                 </div>
               </div>
       
-              <div class="w-[37.5rem] h-[100%] border-2 border-red-700 bg-green-100 flex flex-col justify-between text-center p-4">
-                <div class="w-[60%] h-[10rem] mx-[auto] border border-green-500">
-                  <h4 class="font-bold">DESIGNED SOFA</h4>
+              <div class="w-[37.5rem] h-[100%] bg-green-50 flex flex-col justify-between text-center p-4">
+                <div class="w-[60%] h-[10rem] mx-[auto]">
+                  <h4 class="font-bold text-gray-950">DESIGNED SOFA</h4>
                   <p class="mt-2 text-sm">Introducing our newest sofa, the perfect combination of style and comfort, designed to elevate your living space and provide ultimate relaxation.</p>
                   <br />
                   <p class="hover:underline"><a href="#feat">view more ></a></p>
                 </div>
-                <div class="w-[100%] h-[13.75rem] border border-red-500">
+                <div class="w-[100%] h-[13.75rem]">
                   <img src="../assets/cushion.png"/>
                 </div>
               </div>
       
-              <div class="w-[17.5rem] h-[100%] border-2 border-green-700 bg-red-50 flex flex-col justify-between px-4">
-                <div class="w-[100%] h-[13.75rem] border border-green-500 pt-4">
-                  <h4 class="font-bold">NOVA CHAIR</h4>
+              <div class="w-[17.5rem] h-[100%] bg-gray-50 flex flex-col justify-between px-4">
+                <div class="w-[100%] h-[13.75rem] pt-4">
+                  <h4 class="font-bold text-gray-950">NOVA CHAIR</h4>
                   <p class="mt-2 text-sm w-[85%]">a stylish and comfortable addition to any room, with its sleek design and plush cushions creating the ultimate seating experience.</p>
                   <br />
                   <p class="hover:underline"><a href="#feat">view more ></a></p>
                 </div>
-                <div class="w-[70%] h-[12.5rem] border border-red-500 relative" style="position: relative; left: 4.5625rem;">
+                <div class="w-[70%] h-[12.5rem] relative" style="position: relative; left: 4.5625rem;">
                   <img src="../assets/plstc.png"/>
                 </div>
               </div>

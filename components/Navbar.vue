@@ -1,15 +1,15 @@
 <template>
     <div>
-        <div class="py-8 pl-12 pr-24 flex justify-between">
+        <div class="py-10 pl-12 pr-24 flex justify-between border border-gray-300">
             <NuxtLink to="/">
-                <div class="w-[200px] h-[50px] border-2 border-red-900">
+                <div class="w-[200px] h-[50px]">
                     <img class="w-[100%] h-[100%]" src="../assets/logo.png"/>
                 </div>
             </NuxtLink>
-            <div class="border-2 border-green-700 w-[auto] h-[auto] p-[0.125rem] flex flex-row">
+            <div class="w-[auto] h-[auto] p-[0.125rem] flex flex-row mt-2">
 
                 <transition name="option">
-                    <div v-if="showMenu" class="border-2 border-red-600 w-[23.75rem] h-10 p-[0.3125rem] relative top-0">
+                    <div v-if="showMenu" class="w-[23.75rem] h-10 p-[0.3125rem] relative top-0">
                         <ul class="flex">
                             <li class="navi">HOME</li>
                             <li class="navi">SHOP<Icon name="ic:outline-expand-more" size="1.5em" color="black" class="pb-1" /></li>
@@ -18,17 +18,17 @@
                         </ul>
                     </div>
                 </transition>
-                    <div v-if="showMenu" class="border-2 border-blue-600 w-[15.5rem] h-10 p-[0.3125rem]">
+                    <div v-if="showMenu" class="w-[15.5rem] h-10 p-[0.3125rem]">
                         <ul class="flex">
                             <li class="navi"><Icon name="ic:outline-favorite-border" size="1.2em" color="black" class="pb-1" />LOVE</li>
                             <li class="navi"><NuxtLink to="/CartPage"><Icon name="ic:outline-shopify" size="1.4em" color="black" class="pb-1" />CART</NuxtLink></li>
                             <li class="navi cursor-pointer" v-on:click="search"><Icon name="ic:outline-search" size="1.5em" color="black" class="pb-1" /></li>
                         </ul>
                     </div>
-                    <div v-if="!showMenu" class="w-[100%] h-10 border-2 border-yellow-400 flex justify-around">
-                        <div class="flex w-[100%] justify-around">
-                            <div class="border-2 border-red-400 w-[1.7rem] h-[1.7rem] rounded-full cursor-pointer mt-[0.3125rem]" v-on:click="menu"><Icon name="ic:twotone-search-off" size="1.5em" color="black" class="pb-1" /></div>
-                            <div class="border-2 border-blue-400 w-[28.125rem] h-[2.187rem] relative">
+                    <div v-if="!showMenu" class="w-[100%] h-10 flex justify-around">
+                        <div class="border-2 border-gray-400 rounded-sm flex w-[100%] justify-around">
+                            <div class="border-2w-[1.7rem] h-[1.7rem] rounded-full cursor-pointer mt-[0.3125rem]" v-on:click="menu"><Icon name="ic:twotone-search-off" size="1.5em" color="black" class="pb-1" /></div>
+                            <div class="border w-[28.125rem] h-[2.187rem] relative">
                                 <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
                             </div>
                         </div>
@@ -102,6 +102,6 @@ export default {
     top: 0px;
 }
 .option-enter-active {
-    transition: all 1.5s ease;
+    transition: all .5s ease;
 }
 </style>

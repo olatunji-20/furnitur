@@ -12,16 +12,16 @@
     @apply border-red-300 bottom-1 shadow-md;
 }
 .choose-card {
-    @apply border border-green-900 w-[21.875rem] h-[14rem] my-4 text-center p-2 relative top-0 cursor-pointer duration-200 ;
+    @apply border border-gray-100 w-[21.875rem] h-[14rem] my-4 text-center p-2 relative top-0 cursor-pointer duration-200 ;
 }
 .choose-card:hover {
-    @apply top-2 shadow-lg;
+    @apply top-2 shadow-lg border-gray-200;
 }
 .footcard {
-    @apply border-2 border-red-500 w-[100%] h-[250px] mt-4 sm:w-[45%] md:w-[13rem];
+    @apply w-[100%] h-[250px] mt-4 sm:w-[45%] md:w-[13rem];
 }
 .foot {
-    @apply leading-8 relative left-0 cursor-pointer transition-all duration-300;
+    @apply leading-8 relative left-0 cursor-pointer text-gray-700 transition-all duration-300;
 }
 
 .foot:hover {
@@ -30,7 +30,7 @@
 
 
 .social {
-    @apply w-[35px] h-[35px] border border-green-700 cursor-pointer relative bottom-0 duration-200;
+    @apply w-[35px] h-[35px] cursor-pointer relative bottom-0 duration-200;
 }
 .social:hover {
     @apply bottom-1
