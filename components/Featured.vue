@@ -64,7 +64,8 @@ export default {
         OnSale,
         Sofa,
         HangingLight
-    }
+    },
+    emits: ['onSofa']
 }
 </script>
 

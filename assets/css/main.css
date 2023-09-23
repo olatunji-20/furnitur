@@ -6,7 +6,7 @@
     @apply mx-4 relative cursor-pointer text-sm left-0 duration-200 hover:left-1;
 }
 .product-card {
-    @apply w-[18.75rem] h-[30rem] border-2 border-green-400 my-12 relative bottom-0 duration-200;
+    @apply w-[18.75rem] h-[30rem] border-4 border-green-400 my-12 relative bottom-0 duration-200;
 }
 .product-card:hover {
     @apply border-red-300 bottom-1 shadow-md;

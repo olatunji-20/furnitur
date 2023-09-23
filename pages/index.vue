@@ -34,7 +34,7 @@
                     LED lighting, and adjustable height.
                   </p>
                   <br />
-                  <p>View more ></p>
+                  <p class="hover:underline"><a href="#feat">view more ></a></p>
                 </div>
               </div>
       
@@ -43,7 +43,7 @@
                   <h4 class="font-bold">DESIGNED SOFA</h4>
                   <p class="mt-2 text-sm">Introducing our newest sofa, the perfect combination of style and comfort, designed to elevate your living space and provide ultimate relaxation.</p>
                   <br />
-                  <p>View more ></p>
+                  <p class="hover:underline"><a href="#feat">view more ></a></p>
                 </div>
                 <div class="w-[100%] h-[13.75rem] border border-red-500">
                   <img src="../assets/cushion.png"/>
@@ -55,7 +55,7 @@
                   <h4 class="font-bold">NOVA CHAIR</h4>
                   <p class="mt-2 text-sm w-[85%]">a stylish and comfortable addition to any room, with its sleek design and plush cushions creating the ultimate seating experience.</p>
                   <br />
-                  <p>View more ></p>
+                  <p class="hover:underline"><a href="#feat">view more ></a></p>
                 </div>
                 <div class="w-[70%] h-[12.5rem] border border-red-500 relative" style="position: relative; left: 4.5625rem;">
                   <img src="../assets/plstc.png"/>
@@ -64,7 +64,7 @@
             </div>
           </section>
           <Trusted />
-          <Featured />
+          <Featured id="feat"/>
           <Choose />
       
           <!-- SPECIAL SECTION -->
@@ -139,6 +139,7 @@ body, html {
     margin: 0px !important;
     padding: 0px !important;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 .announcement {
   display: none;
