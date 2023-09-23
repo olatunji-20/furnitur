@@ -35,7 +35,7 @@
         </div>
         <div class="w-[100%] h-[auto] border-2 border-red-800 mx-[auto] flex flex-col justify-between py-[1.25rem] sm:flex-row md:w-[85%]">
             <div class="h-[2.5rem] w-[23.75rem] border border-red-800 p-[0.3125rem]">
-                <p>Furnitur© Copyright 2020, Inc. All rights reserved.</p>
+                <p>Furnitur© Copyright 2023, Inc. All rights reserved.</p>
             </div>
             <div class="h-[2.1875rem] w-[12.5rem] border border-red-800 flex justify-between mt-[0.625rem]">
                 <div class="social"><Icon name="ic:baseline-whatsapp" size="2em" /></div>

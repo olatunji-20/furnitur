@@ -18,7 +18,7 @@
                         </ul>
                     </div>
                 </transition>
-                    <div v-if="showMenu" class="border-2 border-blue-600 w-[15rem] h-10 p-[0.3125rem]">
+                    <div v-if="showMenu" class="border-2 border-blue-600 w-[15.5rem] h-10 p-[0.3125rem]">
                         <ul class="flex">
                             <li class="navi"><Icon name="ic:outline-favorite-border" size="1.2em" color="black" class="pb-1" />LOVE</li>
                             <li class="navi"><NuxtLink to="/CartPage"><Icon name="ic:outline-shopify" size="1.4em" color="black" class="pb-1" />CART</NuxtLink></li>

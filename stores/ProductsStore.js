@@ -15,52 +15,52 @@ export const useProductsStore = defineStore('productsStore', {
 
     actions: {
         async getProducts() {
-            const res = await fetch("http://localhost:5000/products")
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/products")
             const products = await res.json()
 
             this.products = products
         },
         async getProduct(id) {
-            const res = await fetch("http://localhost:5000/products/" + id)
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/products/" + id)
             const product = await res.json()
 
             this.product = product
         },
 
         async getSales() {
-            const res = await fetch("http://localhost:5000/on-sales")
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/on-sales")
             const prods = await res.json()
 
             this.prods = prods
         },
         async getOnSalesProduct(id) {
-            const res = await fetch("http://localhost:5000/on-sales/" + id)
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/on-sales/" + id)
             const product = await res.json()
 
             this.product = product
         },
 
         async getSofa() {
-            const res = await fetch("http://localhost:5000/sofa")
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/sofa")
             const sofa = await res.json()
 
             this.sofaProds = sofa
         },
         async getSofaProduct(id) {
-            const res = await fetch("http://localhost:5000/sofa/" + id)
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/sofa/" + id)
             const product = await res.json()
 
             this.product = product
         },
 
         async getHang() {
-            const res = await fetch("http://localhost:5000/hanging")
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/hanging")
             const hangs = await res.json()
 
             this.hangProds = hangs
         },
         async getHangingProduct(id) {
-            const res = await fetch("http://localhost:5000/hanging/" + id)
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/hanging/" + id)
             const product = await res.json()
 
             this.product = product
