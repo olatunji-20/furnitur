@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="py-10 pl-12 pr-24 flex justify-between border border-gray-300">
+        <div class="py-10 pl-12 pr-24 flex justify-between border-2 border-gray-400">
             <NuxtLink to="/">
                 <div class="w-[200px] h-[50px]">
                     <img class="w-[100%] h-[100%]" src="../assets/logo.png"/>
@@ -27,9 +27,9 @@
                     </div>
                     <div v-if="!showMenu" class="w-[100%] h-10 flex justify-around">
                         <div class="border-2 border-gray-400 rounded-sm flex w-[100%] justify-around">
-                            <div class="border-2w-[1.7rem] h-[1.7rem] rounded-full cursor-pointer mt-[0.3125rem]" v-on:click="menu"><Icon name="ic:twotone-search-off" size="1.5em" color="black" class="pb-1" /></div>
+                            <div class="border-2w-[1.7rem] h-[1.7rem] rounded-full cursor-pointer mt-[0.3125rem] pt-1 bg-gray-300" v-on:click="menu"><Icon name="ic:twotone-search-off" size="1.5em" color="black" class="pb-1" /></div>
                             <div class="border w-[28.125rem] h-[2.187rem] relative">
-                                <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4">
+                                <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4 focus:outline-none">
                             </div>
                         </div>
                     </div>

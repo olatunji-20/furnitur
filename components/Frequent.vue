@@ -1,8 +1,8 @@
 <template>
-  <div class="border-4 border-red-400 w-[100%] h-[auto] py-16 text-center">
+  <div class="w-[100%] h-[auto] py-16 text-center">
     <h1 class="text-3xl font-bold">FREQUENTLY ASKED QUESTIONS</h1>
     <p class="font-bold">SOLVE ALL YOUR PROBLEMS ABOUT OUR PRODUCTS.</p>
-    <div class="w-[75%] h-[auto] border-2 border-blue-800 my-12 mx-[auto]">
+    <div class="w-[75%] h-[auto] my-12 mx-[auto]">
       <section class="last">
         <div class="study">
           <div class="join">
@@ -159,13 +159,13 @@ export default {
 .last {
   width: 100%;
   height: auto;
-  border: 4px solid greenyellow;
+  /* border: 4px solid greenyellow; */
 }
 .study {
   width: 70%;
   height: auto;
   margin: 1rem auto;
-  border: 3px solid orange;
+  /* border: 1px solid orange; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -207,7 +207,7 @@ export default {
   }
 }
 .details {
-  border: 1px solid aquamarine;
+  /* border: 1px solid orange; */
   border-radius: 5px;
   width: 100%;
   height: 6.25rem;

@@ -69,21 +69,21 @@
       
           <!-- SPECIAL SECTION -->
       
-          <section class="border-8 border-red-800 w-[100%] h-[auto] pt-28 pb-44">
-            <div class="border-2 border-green-800 w-[85%] h-[18.75rem] mx-[auto] flex justify-between">
-              <div class="w-[23.75rem] h-[100%] border border-red-400 p-12">
-                <div class="border-2 border-blue-300 w-[auto] h-[5.625rem]">
+          <section class="w-[100%] h-[auto] pt-28 pb-44">
+            <div class="w-[85%] h-[18.75rem] mx-[auto] bg-gray-100 flex justify-between">
+              <div class="w-[23.75rem] h-[100%] p-12">
+                <div class="w-[auto] h-[5.625rem]">
                   <vueTyperNext class="text-3xl font-bold" data="MODERN BRONZE HANGING LIGHT" typeSpeed=120 handlerNum=80  />
                 </div>
-                <div class="w-[9.375rem] h-[1.5625rem] border border-blue-600 my-4"><star-rating :rating="rating" :star-style="starStyle"></star-rating></div>
+                <div class="w-[9.375rem] h-[1.5625rem] my-4"><star-rating :rating="rating" :star-style="starStyle"></star-rating></div>
                 <p class="mt-8 line-through">$3252.41</p>
                 <h5 class="font-bold text-2xl inline">$2352.41</h5>
-                <p class="bg-red-600 inline ml-6 py-1 px-2 rounded-sm text-white">-30%</p>
+                <p class="inline ml-6 py-1 px-2 rounded-sm text-white">-30%</p>
               </div>
-              <div class="w-[15.625rem] h-[135%] border border-red-400">
+              <div class="w-[15.625rem] h-[135%] bg-gray-100">
                 <img src="../assets/hang5.png" class="w-[100%] h-[100%]" alt="hanging light"/>
               </div>
-              <div class="w-[23.75rem] h-[100%] border border-red-400 py-12 px-2 text-right">
+              <div class="w-[23.75rem] h-[100%] py-12 px-2 text-right">
                 <p>Stunning lighting feature that combines contemporary style with timeless elegance. Featuring a sleek and
                   minimalist design, this hanging light is crafted from high-quality bronze and finished with a smooth and lustrous surface.
                 </p>
@@ -95,6 +95,7 @@
           <!-- END SPECIAL SECTION -->
       
           <Reviews />
+          <Frequent />
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[100%] h-[100%] border-4 border-red-400 flex flex-wrap">
+  <div class="w-[100%] h-[100%] flex flex-wrap">
     <Card :link="'/hanging-light/'" :products="productsStore.hangProds" :key="productsStore.hangProds"/>
   </div>
 </template>
