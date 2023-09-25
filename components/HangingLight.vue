@@ -1,6 +1,10 @@
 <template>
   <div class="w-[100%] h-[100%] flex flex-wrap">
-    <Card :link="'/hanging-light/'" :products="productsStore.hangProds" :key="productsStore.hangProds"/>
+    <Card
+      :link="'/hanging-light/'"
+      :products="productsStore.hangProds"
+      :key="productsStore.hangProds"
+    />
   </div>
 </template>
 
@@ -14,7 +18,7 @@ export default {
     productsStore.getHang();
 
     return { productsStore };
-  }
+  },
 };
 </script>
 

@@ -1,30 +1,34 @@
 <template>
-  <div class="border border-red-300 cursor-pointer text-red-600 font-bold text-md px-1 h-[100%]">
-    <p @click="productsStore.removeFromCart(id), move()" class="py-2">Delete</p>
+  <div class="cursor-pointer text-red-600 font-bold text-md px-1 h-[100%]">
+    <p
+      @click="productsStore.removeFromCart(id), move()"
+      class="py-2 bg-white rounded-sm"
+    >
+      Delete
+    </p>
   </div>
 </template>
 
 <script>
-import { useProductsStore } from '../stores/ProductsStore'
+import { useProductsStore } from "../stores/ProductsStore";
 
 export default {
   setup() {
-        const router = useRouter();
-        const productsStore = useProductsStore();
+    const router = useRouter();
+    const productsStore = useProductsStore();
 
-        return { productsStore, router }
-    },
+    return { productsStore, router };
+  },
   props: {
-    id: Number
+    id: Number,
   },
   methods: {
     move() {
-      this.$router.go("/CartPage")
-    }
-  }
-}
+      this.$router.go("/CartPage");
+    },
+  },
+};
 </script>
 
 <style>
-
 </style>

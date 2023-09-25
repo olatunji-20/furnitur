@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <Pop /> -->
-    <div class="">
+    <div>
       <ProductCard :product="productsStore.product" />
     </div>
     <Best />

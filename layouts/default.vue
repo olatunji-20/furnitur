@@ -1,21 +1,19 @@
 <template>
+  <div>
+    <Navbar />
     <div>
-        <Navbar />
-        <div>
-            <slot />
-        </div>
-        <FootBar />
+      <slot />
     </div>
+    <FootBar />
+  </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar'
-import FootBar from '~/components/FootBar'
+import Navbar from "~/components/Navbar";
+import FootBar from "~/components/FootBar";
 
 export default {
-    setup() {
-
-    },
-    components: { Navbar, FootBar }
-}
+  setup() {},
+  components: { Navbar, FootBar },
+};
 </script>

@@ -1,6 +1,10 @@
 <template>
   <div class="w-[100%] h-[100%] flex flex-wrap">
-    <Card :link="'/sofa/'" :products="productsStore.sofaProds" :key="productsStore.sofaProds"/>
+    <Card
+      :link="'/sofa/'"
+      :products="productsStore.sofaProds"
+      :key="productsStore.sofaProds"
+    />
   </div>
 </template>
 
@@ -14,7 +18,7 @@ export default {
     productsStore.getSofa();
 
     return { productsStore };
-  }
+  },
 };
 </script>
 

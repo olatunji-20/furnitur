@@ -12,7 +12,7 @@
     @apply bottom-1 shadow-md;
 }
 .choose-card {
-    @apply border border-gray-100 w-[21.875rem] h-[14rem] my-4 text-center p-2 relative top-0 cursor-pointer duration-200 ;
+    @apply border border-gray-100 w-[21.875rem] h-[14rem] my-4 text-center p-2 relative top-0 cursor-pointer duration-200;
 }
 .choose-card:hover {
     @apply top-2 shadow-lg border-gray-200;
@@ -33,5 +33,5 @@
     @apply w-[35px] h-[35px] cursor-pointer relative bottom-0 duration-200;
 }
 .social:hover {
-    @apply bottom-1
+    @apply bottom-1;
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="">
+    <div>
       <ProductCard :product="productsStore.product" />
     </div>
     <Best />

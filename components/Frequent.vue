@@ -23,9 +23,7 @@
             </transition>
           </div>
           <div class="join">
-            <p class="topic">
-              2. Do you offer free shipping?
-            </p>
+            <p class="topic">2. Do you offer free shipping?</p>
             <p
               v-text="detailB ? first : second"
               v-on:click="showDetailB"
@@ -33,7 +31,12 @@
             ></p>
             <transition name="detail">
               <div v-show="detailB" class="details">
-                <p>Yes, we offer free standard shipping on all orders over a certain amount within the continental United States. For orders below that amount or for expedited shipping options, additional fees may apply.</p>
+                <p>
+                  Yes, we offer free standard shipping on all orders over a
+                  certain amount within the continental United States. For
+                  orders below that amount or for expedited shipping options,
+                  additional fees may apply.
+                </p>
               </div>
             </transition>
           </div>
@@ -109,12 +112,7 @@ export default {
       detailE: false,
     };
   },
-  components: {
-    // Navbar,
-    // Work,
-    // CheckBold,
-    // Footbar,
-  },
+  components: {},
   methods: {
     showDetailA() {
       this.detailA = !this.detailA;
@@ -150,7 +148,7 @@ export default {
       this.detailC = false;
       this.detailA = false;
       this.detailD = false;
-    }
+    },
   },
 };
 </script>
@@ -159,13 +157,11 @@ export default {
 .last {
   width: 100%;
   height: auto;
-  /* border: 4px solid greenyellow; */
 }
 .study {
   width: 70%;
   height: auto;
   margin: 1rem auto;
-  /* border: 1px solid orange; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -208,7 +204,6 @@ export default {
   }
 }
 .details {
-  /* border: 1px solid orange; */
   border-radius: 5px;
   width: 100%;
   height: 6.25rem;

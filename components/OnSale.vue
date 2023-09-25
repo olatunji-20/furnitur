@@ -1,6 +1,10 @@
 <template>
   <div class="w-[100%] h-[100%] flex flex-wrap">
-    <Card :link="'/on-sale/'" :products="productsStore.prods" :key="productsStore.prods"/>
+    <Card
+      :link="'/on-sale/'"
+      :products="productsStore.prods"
+      :key="productsStore.prods"
+    />
   </div>
 </template>
 
@@ -14,7 +18,7 @@ export default {
     productsStore.getSales();
 
     return { productsStore };
-  }
+  },
 };
 </script>
 

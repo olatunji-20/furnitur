@@ -3,7 +3,11 @@
     <h1 class="text-3xl font-bold">BEST COMBINED WITH:</h1>
     <p class="font-bold">THESE COMBINATION WILL MAKE YOUR HOME TONE-SUR-TONE</p>
     <div class="w-[85%] h-[auto] my-12 mx-[auto]">
-      <Card :link="'/every-products/'" :products="bestProducts" :key="bestProducts"/>
+      <Card
+        :link="'/every-products/'"
+        :products="bestProducts"
+        :key="bestProducts"
+      />
     </div>
   </div>
 </template>
@@ -25,16 +29,19 @@ export default {
     const sofaProducts = productsStore.sofaProds;
     const hangingLightProducts = productsStore.hangProds;
 
-    const everyProducts = allProducts.concat(onSalesProducts, sofaProducts, hangingLightProducts);
-
+    const everyProducts = allProducts.concat(
+      onSalesProducts,
+      sofaProducts,
+      hangingLightProducts
+    );
 
     const best = everyProducts.sort(() => 0.5 - Math.random());
     let bestProducts = best.slice(0, 3);
 
     return {
-      bestProducts
+      bestProducts,
     };
-  }
+  },
 };
 </script>
 
