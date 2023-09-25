@@ -4,8 +4,8 @@
     <h1 class="font-bold text-3xl">SHOPPING CART</h1>
     <p class="font-bold my-6">THIS IS YOUR CART BASED ON WHAT YOU WANTED TO BUY</p>
     <LineAnimate stage="stage1" />
-    <div class="border-4 border-green-600 w-[100%] h-[auto] text-center py-20">
-        <div class="border-2 border-red-700 w-[80%] h-[auto] mx-[auto]">
+    <div class="w-[100%] h-[auto] text-center py-20">
+        <div class="shadow-md w-[80%] h-[auto] mx-[auto]">
             <Cart @show-modal="showModal" :cartProducts="cart" :total="totalPrice()"/>
         </div>
     </div>

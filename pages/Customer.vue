@@ -3,16 +3,16 @@
         <h1 class="font-bold text-4xl">CUSTOMER INFORMATION</h1>
         <LineAnimate stage="stage3" />
         <div class="border-4 border-green-500 w-[100%] h-[auto] flex justify-around py-24 px-32">
-        <div class="border-2 border-yellow-800 w-[60%] h-[auto] text-left">
+        <div class="shadow-lg py-2 w-[60%] h-[auto] text-left">
           <h1 class="font-bold text-2xl">SHIPPING SERVICE</h1>
           <p>Choose one best shipping service across your needs.</p>
           <ServiceForm />
 
           <!-- <ShippingForm /> -->
         </div>
-        <div class="border-2 border-blue-500 w-[35%] h-[auto]">
+        <div class="w-[35%] h-[auto]">
           <h2 class="text-left font-bold text-2xl">YOUR ORDER</h2>
-          <div class="border-2 border-green-500 w-[100%] h-[auto] text-left mt-8">
+          <div class="shadow-md py-4 w-[100%] h-[auto] text-left mt-8">
             <p>Review all the products you want to buy.</p>
             <SecondCart link="/Review" linkText="REVIEW YOUR ORDER" :showShip="false" />
           </div>

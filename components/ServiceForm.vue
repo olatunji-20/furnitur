@@ -1,20 +1,20 @@
 <template>
   <div>
-    <div class="border-2 border-blue-600 w-[100%] h-[auto] mt-12">
-        <div v-for="service in shipping" :key="service.id" class="border-2 border-purple-500 w-[100%] h-[5rem] flex justify-between my-2">
-            <div class="border-2 border-green-300 w-[3.125rem] h-[100%] text-center pt-[1.375rem]">
+    <div class="border-4 border-gray-200 w-[100%] max-h-[20rem] overflow-auto mt-12">
+        <div v-for="service in shipping" :key="service.id" class="shadow-md border bg-gray-100 w-[100%] h-[5rem] flex justify-between my-2">
+            <div class="w-[3.125rem] h-[100%] text-center pt-[1.375rem]">
                 <input type="radio" />
             </div>
-            <div class="border-2 border-yellow-500 w-[18.75rem] h-[100%] pt-[0.75rem]">
+            <div class="border border-gray-200 shadow-md w-[18.75rem] h-[100%] pt-[0.75rem]">
                 <h2 class="font-bold">{{ service.serviceName }}</h2>
-                <p class="text-sm">{{ service.serviceDelivery }}3</p>
+                <p class="text-sm text-gray-700">{{ service.serviceDelivery }}3</p>
             </div>
-            <div class="border-2 border-red-300 w-[9.375rem] h-[100%] text-center pt-[1.375rem]">
+            <div class="w-[9.375rem] h-[100%] text-center pt-[1.375rem] font-bold text-red-500">
                 <p>${{ service.servicePrice }}</p>
             </div>
         </div>
     </div>
-    <hr class="border-2 border-green-700 w-[98%] my-8 mx-[auto]" />
+    <hr class="border-2 border-red-600 w-[98%] my-8 mx-[auto]" />
     <div class="border-2 border-red-400 w-[100%] h-[auto]">
         <h1 class="font-bold text-2xl">PAYMENT METHOD</h1>
         <p class="text-sm mb-10">Choose what service you want for your transaction</p>
@@ -65,7 +65,7 @@ export default {
     },
     methods: {
         async getServices() {
-            const res = await fetch("http://localhost:5000/shipping-services")
+            const res = await fetch("https://my-json-server.typicode.com/olatunji-20/furnitur-api/shipping-services")
             const services = await res.json()
 
             this.shipping = services

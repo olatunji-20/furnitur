@@ -1,23 +1,23 @@
 <template>
   <div>
-    <div class="border-4 border-blue-500 w-[100%] h-[auto] flex justify-between wrap">
-        <div class="border-4 border-green-300 w-[60%] min-h-[1.875rem]">
-            <div class="border-2 border-red-400 w-[100%] h-[12.5rem] flex justify-between mb-4" v-for="c in cartProducts" :key="c.id">
-                <div class="border border-red-500 w-[30%] h-[100%]">
+    <div class="shadow-lg w-[100%] h-[auto] flex justify-between wrap">
+        <div class="w-[60%] min-h-[1.875rem] max-h-[40rem] overflow-auto">
+            <div class="border border-gray-200 shadow-md bg-gray-50 w-[100%] h-[12.5rem] flex justify-between mb-4" v-for="c in cartProducts" :key="c.id">
+                <div class="w-[30%] h-[100%]">
                     <img class="w-[100%] h-[100%] object-cover" :src="c.image" :alt="c.productName" />
                 </div>
-                <div class="border border-blue-500 w-[64%] h-[100%] text-left pt-2">
+                <div class="w-[64%] h-[100%] text-left pt-2">
                     <p class="font-bold text-xl inline">{{ c.productName }}</p>
-                    <div v-on:click="prepModal(c.id)" class="border-2 border-blue-700 inline float-right mr-4 cursor-pointer">
+                    <div v-on:click="prepModal(c.id)" class="bg-gray-200 inline float-right mr-4 cursor-pointer">
                         <p class="font-bold text-2xl">&#x2715;</p>
                     </div>
-                    <div class="border border-red-500 h-[1.5625rem] w-[9.375rem] my-2">
+                    <div class="h-[1.5625rem] w-[9.375rem] my-2">
                         <star-rating :rating="c.rating" :star-style="starStyle"></star-rating>
                     </div>
                     <p class="font-bold">${{ c.price }}</p>
-                    <div class="border border-blue-400 mr-4 w-[9.375rem] h-[2.5rem] bg-gray-100 flex justify-around float-right rounded-md">
+                    <div class="mr-4 w-[9.375rem] h-[2.5rem] bg-gray-200 flex justify-around float-right rounded-md">
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity--">-</span>
-                        <input v-model="c.quantity" class="inputer w-[3.125rem] font-bold bg-gray-100 text-xl text-center" type="number" :placeholder="number"/>
+                        <input v-model="c.quantity" class="inputer w-[3.125rem] font-bold bg-gray-200 text-xl text-center" type="number" :placeholder="number"/>
                         <span class="text-2xl font-bold mx-4 cursor-pointer" @click="c.quantity++">+</span>
                     </div>
                     <br />
@@ -26,13 +26,13 @@
                 </div>
             </div>
         </div>
-        <div class="border-4 border-red-800 w-[35%] h-[100%] py-12">
-            <div class="border border-blue-500 w-[80%] h-[auto] mx-[auto] text-left">
+        <div class="w-[35%] h-[100%] py-12">
+            <div class="shadow-lg w-[80%] h-[auto] mx-[auto] text-left">
                 <h1 class="font-bold text-2xl">ORDER SUMMARY</h1>
                 <p class="mt-4 mb-12 text-sm">Apply your monthly voucher to get more discount!</p>
                 <p class="py-4">Price: <span class="font-bold text-xl float-right">${{ total.toFixed(2) }}</span></p>
-                <p class="py-4">Discount:  <span class="font-bold text-xl float-right">{{ discount }}%</span></p>
-                <p class="py-4">Total Price:  <span class="font-bold text-xl float-right">${{ (total - ((discount/100) * total)).toFixed(2) }}</span></p>
+                <p class="py-4">Discount:  <span class="font-bold text-xl float-right text-red-500">{{ discount }}%</span></p>
+                <p class="py-4">Total Price:  <span class="font-bold text-2xl float-right text-green-600">${{ (total - ((discount/100) * total)).toFixed(2) }}</span></p>
 
                 <NuxtLink to="/Shipping"><button class="bg-red-700 w-[100%] py-2 text-white mt-16">PROCEED TO CHECKOUT</button></NuxtLink>
 
