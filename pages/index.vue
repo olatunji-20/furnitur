@@ -10,7 +10,7 @@
               <h5 class="leading-10 font-bold">WELCOME TO OUR</h5>
       
               <div class="w-[21.875rem] h-[8.125rem]">
-                <vueTyperNext class="text-6xl font-bold leading-24" data="FURNITURE GALLERY" typeSpeed=150 handlerNum=40  />
+                <vueTyperNext class="text-6xl font-bold leading-24" data="FURNITURE GALLERY" typeSpeed=150 handlerNum=70  />
                 
               </div>
               
@@ -22,9 +22,9 @@
       
           <!-- HANGING SECTION -->
       
-          <section class="w-[100%] h-[auto] py-28">
-            <div class="w-[80%] h-[32rem] mx-[auto] flex justify-between text-gray-700">
-              <div class="w-[17.5rem] h-[100%] bg-gray-50 flex flex-col justify-between px-4">
+          <section class="w-[100%] h-[auto] pt-36 pb-28">
+            <div class="border-2 border-red-400 w-[80%] h-[32rem] mx-[auto] flex justify-between text-gray-700">
+              <div class="w-[23%] h-[100%] bg-gray-50 flex flex-col justify-between px-4" data-aos="flip-right">
                 <div class="w-[70%] h-[12.5rem]" style="position: relative; left: 4.5625rem;">
                   <img src="../assets/d-hang.png"/>
                 </div>
@@ -38,7 +38,7 @@
                 </div>
               </div>
       
-              <div class="w-[37.5rem] h-[100%] bg-green-50 flex flex-col justify-between text-center p-4">
+              <div class="w-[50%] h-[100%] bg-green-50 flex flex-col justify-between text-center p-4" data-aos="flip-up">
                 <div class="w-[60%] h-[10rem] mx-[auto]">
                   <h4 class="font-bold text-gray-950">DESIGNED SOFA</h4>
                   <p class="mt-2 text-sm">Introducing our newest sofa, the perfect combination of style and comfort, designed to elevate your living space and provide ultimate relaxation.</p>
@@ -50,7 +50,7 @@
                 </div>
               </div>
       
-              <div class="w-[17.5rem] h-[100%] bg-gray-50 flex flex-col justify-between px-4">
+              <div class="w-[23%] h-[100%] bg-gray-50 flex flex-col justify-between px-4" data-aos="flip-left">
                 <div class="w-[100%] h-[13.75rem] pt-4">
                   <h4 class="font-bold text-gray-950">NOVA CHAIR</h4>
                   <p class="mt-2 text-sm w-[85%]">a stylish and comfortable addition to any room, with its sleek design and plush cushions creating the ultimate seating experience.</p>
@@ -107,6 +107,12 @@ import Reviews from '~/components/Reviews'
 import Featured from '~/components/Featured'
 import StarRating from 'vue-dynamic-star-rating';
 import { vueTyperNext } from "vue-typer-next";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// AOS.init({
+//   duration: 1000
+// });
 
   export default {
     setup() {

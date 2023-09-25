@@ -15,5 +15,6 @@ export default defineNuxtConfig({
   ],
   css: [
     '@/assets/css/main.css'
-  ]
+  ],
+  plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }]
 })

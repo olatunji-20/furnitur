@@ -2,7 +2,7 @@
   <div>
     <div class="w-[100%] h-[auto] mt-8">
       <div class="border border-gray-200  mx-auto w-[95%] min-h-[6.25rem] max-h-[25rem] overflow-y-auto">
-        <div class="shadow-md bg-gray-100 w-[100%] h-[6.25rem] flex justify-between mb-4" v-for="c in cart" :key="c.id">
+        <div class="bg-gray-100 w-[100%] h-[6.25rem] flex justify-between mb-4 cursor-pointer duration-200 hover:shadow-md " v-for="c in cart" :key="c.id">
                 <div class="w-[30%] h-[100%]">
                     <img class="w-[100%] h-[100%] object-cover" :src="c.image" :alt="c.productName" />
                 </div>

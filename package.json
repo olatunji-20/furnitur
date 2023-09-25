@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
+    "aos": "^2.3.4",
     "pinia": "^2.1.4",
     "vue-dynamic-star-rating": "^1.0.8",
     "vue-typer-next": "^1.0.1"

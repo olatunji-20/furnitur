@@ -172,9 +172,9 @@ export default {
   justify-content: space-around;
 }
 .join {
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 0.1875rem;
-  box-shadow: 2px 1px 1px gray;
+  box-shadow: 1px 1px 1px gray;
   width: 90%;
   height: auto;
   margin: 1rem auto;

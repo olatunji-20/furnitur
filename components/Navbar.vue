@@ -35,7 +35,7 @@
                     </div>
             </div>
         </div>
-        <div v-show="showSearch" class="border-2 border-red-500 w-[100%] h-[auto] p-4 z-50 bg-pink-50 absolute">
+        <div v-show="showSearch" class="border-2 border-gray-700 w-[100%] h-[auto] p-4 z-50 bg-gray-100 absolute">
             <p v-for="product in filteredProducts" :key="product.id" v-on:click="searched" class="cursor-pointer leading-6"><NuxtLink :to="`/every-products/${product.id}`">{{ product.productName }}</NuxtLink></p>
             <p>{{ searchText }}</p>        
         </div>
