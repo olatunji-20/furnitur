@@ -71,10 +71,10 @@ export default {
 
 <style>
 .active {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #737373;
 }
 .non-active {
-    border-top: 2px solid blue;
+    border-top: 2px solid #e6e6e6;
 }
 
 

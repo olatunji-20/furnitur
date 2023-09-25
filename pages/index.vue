@@ -87,7 +87,7 @@
                 <p>Stunning lighting feature that combines contemporary style with timeless elegance. Featuring a sleek and
                   minimalist design, this hanging light is crafted from high-quality bronze and finished with a smooth and lustrous surface.
                 </p>
-                <div class="bg-gray-900 py-4 w-[13.125rem] text-center text-white mt-8 float-right duration-200 cursor-pointer hover:bg-red-700">BUY NOW</div>
+                <div class="bg-gray-900 py-4 w-[13.125rem] text-center text-white mt-8 float-right duration-200 cursor-pointer hover:bg-red-700"><a href="#feat">BUY NOW</a></div>
               </div>
             </div>
           </section>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="border-4 border-red-800">
+    <div class="">
       <ProductCard :product="productsStore.product" />
     </div>
-    <Reviews />
     <Best />
+    <Reviews />
     <Trusted />
     <Frequent />
   </div>

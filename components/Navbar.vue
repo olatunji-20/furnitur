@@ -29,7 +29,7 @@
                         <div class="border-2 border-gray-400 rounded-sm flex w-[100%] justify-around">
                             <div class="border-2w-[1.7rem] h-[1.7rem] rounded-full cursor-pointer mt-[0.3125rem] pt-1 bg-gray-300" v-on:click="menu"><Icon name="ic:twotone-search-off" size="1.5em" color="black" class="pb-1" /></div>
                             <div class="border w-[28.125rem] h-[2.187rem] relative">
-                                <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4 focus:outline-none">
+                                <input v-on:input="search" v-model="searchText" type="text" placeholder="search..." class="w-[100%] h-8 indent-4 focus:outline outline-gray-400">
                             </div>
                         </div>
                     </div>
