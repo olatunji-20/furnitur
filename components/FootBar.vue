@@ -76,7 +76,7 @@
     <div
       class="w-[100%] h-[auto] mx-[auto] flex flex-col justify-between py-[1.25rem] sm:flex-row md:w-[85%]"
     >
-      <div class="h-[2.5rem] w-[23.75rem] text-gray-700 p-[0.3125rem]">
+      <div class="h-[2.5rem] w-[24.75rem] text-gray-700 p-[0.3125rem]">
         <p>Furnitur© Copyright 2023, Inc. All rights reserved.</p>
       </div>
       <div class="h-[2.1875rem] w-[12.5rem] flex justify-between mt-[0.625rem]">

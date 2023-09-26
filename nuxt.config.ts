@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Orbitron:wght@400;500&display=swap' }]
+      link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Mukta:wght@500&family=Open+Sans:wght@300;500&display=swap' }]
     }
   },
   devtools: { enabled: true },

@@ -30,7 +30,7 @@
           >
             <Icon name="ic:outline-co-present" size="2.5em" color="#404040" />
           </div>
-          <h1 class="font-bold">CUSTOMER INFORMATION</h1>
+          <h1 class="font-bold">CUSTOMER INFO.</h1>
           <p class="text-sm">Add your name, phone number and address.</p>
         </div>
         <div class="border border-gary-100 w-[12.5rem] h-[7.8rem] shadow-md">

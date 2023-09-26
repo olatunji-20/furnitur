@@ -14,7 +14,7 @@
           <h5 class="leading-10 font-bold">WELCOME TO OUR</h5>
           <div class="w-[21.875rem] h-[8.125rem]">
             <vueTyperNext
-              class="text-6xl font-bold leading-24"
+              class="text-6xl font-bold leading-24 ftt"
               data="FURNITURE GALLERY"
               typeSpeed="150"
               handlerNum="70"
@@ -195,7 +195,7 @@ export default {
 <style>
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 body,
 html {
@@ -206,6 +206,9 @@ html {
 }
 .announcement {
   display: none;
+}
+.ftt {
+  font-family: 'Dela Gothic One';
 }
 
 @media screen and (max-width: 1100px) {
